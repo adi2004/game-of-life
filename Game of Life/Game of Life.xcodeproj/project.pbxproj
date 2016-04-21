@@ -7,33 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A1E2A5F1CC8F51100A65F5A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1E2A5E1CC8F51100A65F5A /* MainView.swift */; };
 		3A9D11821CC7A45A00799645 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9D11811CC7A45A00799645 /* AppDelegate.swift */; };
-		3A9D11841CC7A45A00799645 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9D11831CC7A45A00799645 /* ViewController.swift */; };
+		3A9D11841CC7A45A00799645 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9D11831CC7A45A00799645 /* MainViewController.swift */; };
 		3A9D11871CC7A45A00799645 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9D11851CC7A45A00799645 /* Main.storyboard */; };
 		3A9D11891CC7A45A00799645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A9D11881CC7A45A00799645 /* Assets.xcassets */; };
 		3A9D118C1CC7A45A00799645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9D118A1CC7A45A00799645 /* LaunchScreen.storyboard */; };
 		3A9D11B01CC7A49A00799645 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9D11AF1CC7A49A00799645 /* AppDelegate.swift */; };
-		3A9D11B21CC7A49A00799645 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9D11B11CC7A49A00799645 /* ViewController.swift */; };
+		3A9D11B21CC7A49A00799645 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9D11B11CC7A49A00799645 /* MainViewController.swift */; };
 		3A9D11B51CC7A49A00799645 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9D11B31CC7A49A00799645 /* Main.storyboard */; };
 		3A9D11B71CC7A49A00799645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A9D11B61CC7A49A00799645 /* Assets.xcassets */; };
 		3A9D11BA1CC7A49A00799645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9D11B81CC7A49A00799645 /* LaunchScreen.storyboard */; };
+		3A9D11C01CC7ADAD00799645 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9D11BF1CC7ADAD00799645 /* MainCell.swift */; };
+		3A9D11C31CC7BD7000799645 /* StarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9D11C11CC7BD7000799645 /* StarsViewController.swift */; };
+		3A9D11C41CC7BD7000799645 /* StarsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A9D11C21CC7BD7000799645 /* StarsViewController.xib */; };
+		3A9D11C71CC7BF3800799645 /* StarsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9D11C51CC7BF3800799645 /* StarsCell.swift */; };
+		3A9D11C81CC7BF3800799645 /* StarsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A9D11C61CC7BF3800799645 /* StarsCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A1E2A5E1CC8F51100A65F5A /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		3A9D117E1CC7A45A00799645 /* Game of Life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Game of Life.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9D11811CC7A45A00799645 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3A9D11831CC7A45A00799645 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3A9D11831CC7A45A00799645 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3A9D11861CC7A45A00799645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A9D11881CC7A45A00799645 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A9D118B1CC7A45A00799645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A9D118D1CC7A45A00799645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A9D11AD1CC7A49A00799645 /* Stars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9D11AF1CC7A49A00799645 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3A9D11B11CC7A49A00799645 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3A9D11B11CC7A49A00799645 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3A9D11B41CC7A49A00799645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A9D11B61CC7A49A00799645 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A9D11B91CC7A49A00799645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A9D11BB1CC7A49A00799645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A9D11BF1CC7ADAD00799645 /* MainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
+		3A9D11C11CC7BD7000799645 /* StarsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarsViewController.swift; sourceTree = "<group>"; };
+		3A9D11C21CC7BD7000799645 /* StarsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StarsViewController.xib; sourceTree = "<group>"; };
+		3A9D11C51CC7BF3800799645 /* StarsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarsCell.swift; sourceTree = "<group>"; };
+		3A9D11C61CC7BF3800799645 /* StarsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StarsCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,11 +88,12 @@
 			isa = PBXGroup;
 			children = (
 				3A9D11811CC7A45A00799645 /* AppDelegate.swift */,
-				3A9D11831CC7A45A00799645 /* ViewController.swift */,
-				3A9D11851CC7A45A00799645 /* Main.storyboard */,
 				3A9D11881CC7A45A00799645 /* Assets.xcassets */,
-				3A9D118A1CC7A45A00799645 /* LaunchScreen.storyboard */,
 				3A9D118D1CC7A45A00799645 /* Info.plist */,
+				3A9D118A1CC7A45A00799645 /* LaunchScreen.storyboard */,
+				3A9D11851CC7A45A00799645 /* Main.storyboard */,
+				3A1E2A5E1CC8F51100A65F5A /* MainView.swift */,
+				3A9D11831CC7A45A00799645 /* MainViewController.swift */,
 			);
 			path = "Game of Life";
 			sourceTree = "<group>";
@@ -89,11 +102,16 @@
 			isa = PBXGroup;
 			children = (
 				3A9D11AF1CC7A49A00799645 /* AppDelegate.swift */,
-				3A9D11B11CC7A49A00799645 /* ViewController.swift */,
-				3A9D11B31CC7A49A00799645 /* Main.storyboard */,
 				3A9D11B61CC7A49A00799645 /* Assets.xcassets */,
-				3A9D11B81CC7A49A00799645 /* LaunchScreen.storyboard */,
 				3A9D11BB1CC7A49A00799645 /* Info.plist */,
+				3A9D11B81CC7A49A00799645 /* LaunchScreen.storyboard */,
+				3A9D11B31CC7A49A00799645 /* Main.storyboard */,
+				3A9D11BF1CC7ADAD00799645 /* MainCell.swift */,
+				3A9D11B11CC7A49A00799645 /* MainViewController.swift */,
+				3A9D11C51CC7BF3800799645 /* StarsCell.swift */,
+				3A9D11C61CC7BF3800799645 /* StarsCell.xib */,
+				3A9D11C11CC7BD7000799645 /* StarsViewController.swift */,
+				3A9D11C21CC7BD7000799645 /* StarsViewController.xib */,
 			);
 			path = Stars;
 			sourceTree = "<group>";
@@ -188,6 +206,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A9D11BA1CC7A49A00799645 /* LaunchScreen.storyboard in Resources */,
+				3A9D11C41CC7BD7000799645 /* StarsViewController.xib in Resources */,
+				3A9D11C81CC7BF3800799645 /* StarsCell.xib in Resources */,
 				3A9D11B71CC7A49A00799645 /* Assets.xcassets in Resources */,
 				3A9D11B51CC7A49A00799645 /* Main.storyboard in Resources */,
 			);
@@ -200,7 +220,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A9D11841CC7A45A00799645 /* ViewController.swift in Sources */,
+				3A9D11841CC7A45A00799645 /* MainViewController.swift in Sources */,
+				3A1E2A5F1CC8F51100A65F5A /* MainView.swift in Sources */,
 				3A9D11821CC7A45A00799645 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,8 +230,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A9D11B21CC7A49A00799645 /* ViewController.swift in Sources */,
+				3A9D11C01CC7ADAD00799645 /* MainCell.swift in Sources */,
+				3A9D11C31CC7BD7000799645 /* StarsViewController.swift in Sources */,
+				3A9D11B21CC7A49A00799645 /* MainViewController.swift in Sources */,
 				3A9D11B01CC7A49A00799645 /* AppDelegate.swift in Sources */,
+				3A9D11C71CC7BF3800799645 /* StarsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +422,7 @@
 				3A9D11921CC7A45A00799645 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A9D11BC1CC7A49A00799645 /* Build configuration list for PBXNativeTarget "Stars" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +431,7 @@
 				3A9D11BE1CC7A49A00799645 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
