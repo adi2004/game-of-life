@@ -10,22 +10,19 @@ import UIKit
 
 class GameViewController: UIViewController {
     @IBOutlet weak var txtText: UITextView!
-    var g:Game?
-    //private var timer
-    
-//    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
-//        super.init(nibName: nibNameOrNil, bundle:nibBundleOrNil)
-//        g = Game(nrOfEntities: 30, x: 10, y: 10)
-//    }
-//    
-//    required init?(coder aDecoder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
+    @IBOutlet weak var vView: GameView!
+    @IBOutlet weak var lblTitle: UILabel!
+    var g:Game = Game(nrOfEntities: 30, x: 10, y: 10, width: 10, height: 10)
+    var timer:NSTimer?
+    var currentTimerValue:Int = 0
+    let timerValues:[Double] = [1000, 300, 100, 50, 10, 0]
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        txtText.text = "Hello world!"
+        doRefresh(self)
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.0, target: self, selector: #selector(doNext), userInfo: nil, repeats: true)
+        timer?.invalidate()
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,28 +31,44 @@ class GameViewController: UIViewController {
     }
     
     @IBAction func doRefresh(sender: AnyObject) {
-        g = Game(nrOfEntities: 30, x: 10, y: 10)
-        if let gU = g {
-            var txt:String = ""
-            txt += "Game has \(gU.entities.count) entities...\n"
-            txt += GameTextView.getText(game: gU, x: -10, y: -10, rows: 30, cols: 55)
-            txtText.text = txt
-        }
+      g = Game(nrOfEntities: 30, x: 10, y: 10, width: 10, height: 10)
+      updateTxtView(g)
+      updateVView(g)
     }
     
     @IBAction func doNext(sender: AnyObject) {
-        if let gU = g {
-            var txt:String = ""
-            gU.next()
-            txt += "Generation \(gU.generation)\n"
-            txt += "===========================\n"
-            txt += GameTextView.getText(game: gU, x: -10, y: -10, rows: 30, cols: 55)
-            txtText.text = txt
-        }
+      g.next()
+      updateTxtView(g)
+      updateVView(g)
     }
-    
+
     @IBAction func doAnimate(sender: AnyObject) {
-        _ = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(doNext), userInfo: nil, repeats: true)
+      currentTimerValue = (currentTimerValue + 1) % timerValues.count
+      timer?.invalidate()
+      timer = NSTimer.scheduledTimerWithTimeInterval(timerValues[currentTimerValue]/1000, target: self, selector: #selector(doNext), userInfo: nil, repeats: true)
+      (sender as! UIButton).setTitle("Animate \(timerValues[currentTimerValue])", forState: UIControlState.Normal)
     }
+  
+  @IBAction func doViewTap(sender: AnyObject) {
+//    sender
+//    var tap: UITapGestureRecognizer = sender as! UITapGestureRecognizer
+//    tap.
+//    UITapGestureRecognizer(sender)
+  }
+
+  func updateTxtView(gU:Game) {
+    var txt:String = ""
+    txt += "Generation \(gU.generation). Living \(gU.entities.count)\n"
+    txt += "===========================\n"
+    txt += GameTextView.getText(game: gU, x: -10, y: -10, rows: 50, cols: 58)
+    txtText.text = txt
+  }
+  
+  func updateVView(g:Game) {
+    lblTitle.text = "Generation \(g.generation). Living \(g.entities.count)"
+    vView.game = g
+    vView.setNeedsDisplay()
+  }
+  
 }
 
