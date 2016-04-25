@@ -20,26 +20,8 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ly-Gy-667" customClass="GameView" customModule="Game_of_Life" customModuleProvider="target">
                                 <rect key="frame" x="20" y="102" width="560" height="490"/>
-                                <subviews>
-                                    <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oc8-R5-a8q">
-                                        <rect key="frame" x="8" y="8" width="544" height="474"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
-                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="9"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.85098039219999999" blue="0.12549019610000001" alpha="0.26352163461538464" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                                 <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstItem="oc8-R5-a8q" firstAttribute="leading" secondItem="5ly-Gy-667" secondAttribute="leadingMargin" id="CBd-Lp-2LF"/>
-                                    <constraint firstItem="oc8-R5-a8q" firstAttribute="top" secondItem="5ly-Gy-667" secondAttribute="topMargin" id="CY8-8B-LVm"/>
-                                    <constraint firstItem="oc8-R5-a8q" firstAttribute="trailing" secondItem="5ly-Gy-667" secondAttribute="trailingMargin" id="kD4-Sv-rhl"/>
-                                    <constraint firstAttribute="bottom" secondItem="oc8-R5-a8q" secondAttribute="bottom" constant="8" id="nU3-aR-uSi"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="EnZ-55-Cb9" appends="YES" id="U4b-EO-HrH"/>
-                                </connections>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Game of Life!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zuH-ig-dBf">
                                 <rect key="frame" x="20" y="20" width="560" height="36"/>
@@ -65,8 +47,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6BQ-kJ-aBW">
-                                <rect key="frame" x="121" y="64" width="119" height="30"/>
-                                <state key="normal" title="Animate 1000 ms"/>
+                                <rect key="frame" x="121" y="64" width="57" height="30"/>
+                                <state key="normal" title="Animate"/>
                                 <connections>
                                     <action selector="doAnimate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H3G-1u-a4l"/>
                                 </connections>
@@ -100,16 +82,10 @@
                     </view>
                     <connections>
                         <outlet property="lblTitle" destination="zuH-ig-dBf" id="Jx3-bn-TvB"/>
-                        <outlet property="txtText" destination="oc8-R5-a8q" id="xvP-yH-nnF"/>
                         <outlet property="vView" destination="5ly-Gy-667" id="35y-rC-079"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="EnZ-55-Cb9">
-                    <connections>
-                        <action selector="doViewTap:" destination="BYZ-38-t0r" id="MvN-fw-l4A"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="270" y="377"/>
         </scene>

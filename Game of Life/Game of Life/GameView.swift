@@ -9,7 +9,7 @@
 import UIKit
 
 class GameView: UIView {
-    let size:CGFloat = 5.0
+    let size:CGFloat = 10.0
     var game:Game?
 
   //MARK: Life Cycle
