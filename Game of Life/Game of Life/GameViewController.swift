@@ -11,6 +11,7 @@ import UIKit
 class GameViewController: UIViewController {
     @IBOutlet weak var txtText: UITextView!
     var g:Game?
+    //private var timer
     
 //    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
 //        super.init(nibName: nibNameOrNil, bundle:nibBundleOrNil)
@@ -40,6 +41,21 @@ class GameViewController: UIViewController {
             txt += GameTextView.getText(game: gU, x: -10, y: -10, rows: 30, cols: 55)
             txtText.text = txt
         }
+    }
+    
+    @IBAction func doNext(sender: AnyObject) {
+        if let gU = g {
+            var txt:String = ""
+            gU.next()
+            txt += "Generation \(gU.generation)\n"
+            txt += "===========================\n"
+            txt += GameTextView.getText(game: gU, x: -10, y: -10, rows: 30, cols: 55)
+            txtText.text = txt
+        }
+    }
+    
+    @IBAction func doAnimate(sender: AnyObject) {
+        _ = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(doNext), userInfo: nil, repeats: true)
     }
 }
 
