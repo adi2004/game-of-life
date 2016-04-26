@@ -9,5 +9,5 @@
 import UIKit
 
 class StarsCell: UITableViewCell {
-    @IBOutlet weak var lblStars: UILabel!
+  @IBOutlet weak var lblStars: UILabel!
 }

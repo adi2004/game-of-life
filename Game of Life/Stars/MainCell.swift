@@ -9,5 +9,5 @@
 import UIKit
 
 class MainCell: UITableViewCell {
-    @IBOutlet var lblStars: UILabel!
+  @IBOutlet var lblStars: UILabel!
 }
