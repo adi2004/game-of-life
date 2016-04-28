@@ -11,6 +11,9 @@ import UIKit
 class Game: NSObject {
   var entities = Set<Point>()
   var generation: Int = 0
+  
+  override init() {
+  }
 
   init(nrOfEntities nr: Int, x: UInt32, y: UInt32, width: UInt32, height: UInt32) {
     for _ in 0 ..< nr {

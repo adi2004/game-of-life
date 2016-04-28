@@ -47,16 +47,24 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6BQ-kJ-aBW">
-                                <rect key="frame" x="121" y="64" width="57" height="30"/>
-                                <state key="normal" title="Animate"/>
+                                <rect key="frame" x="121" y="64" width="34" height="30"/>
+                                <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="doAnimate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H3G-1u-a4l"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Wch-gH-SaM">
+                                <rect key="frame" x="161" y="64" width="421" height="31"/>
+                                <connections>
+                                    <action selector="doValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Bvv-ij-a5n"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="Wch-gH-SaM" firstAttribute="trailing" secondItem="zuH-ig-dBf" secondAttribute="trailing" id="1TK-r7-8u5"/>
+                            <constraint firstItem="Wch-gH-SaM" firstAttribute="leading" secondItem="6BQ-kJ-aBW" secondAttribute="trailing" constant="8" symbolic="YES" id="2L4-Mp-beB"/>
                             <constraint firstItem="7LS-Mn-t4p" firstAttribute="top" secondItem="zuH-ig-dBf" secondAttribute="bottom" constant="8" symbolic="YES" id="2bY-n5-8E0"/>
                             <constraint firstItem="5ly-Gy-667" firstAttribute="trailing" secondItem="zuH-ig-dBf" secondAttribute="trailing" id="3vh-bZ-NIW"/>
                             <constraint firstItem="1cs-YO-1ry" firstAttribute="leading" secondItem="7LS-Mn-t4p" secondAttribute="trailing" constant="8" symbolic="YES" id="7Fe-7Z-bDM"/>
@@ -64,6 +72,7 @@
                             <constraint firstItem="5ly-Gy-667" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="HOD-RG-Puh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zuH-ig-dBf" secondAttribute="trailing" id="M7X-zG-h6a"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5ly-Gy-667" secondAttribute="bottom" constant="8" symbolic="YES" id="Q9C-vm-RuF"/>
+                            <constraint firstItem="Wch-gH-SaM" firstAttribute="top" secondItem="6BQ-kJ-aBW" secondAttribute="top" id="VFI-ae-O5p"/>
                             <constraint firstItem="zuH-ig-dBf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Z1z-Qw-2pX"/>
                             <constraint firstItem="5ly-Gy-667" firstAttribute="leading" secondItem="zuH-ig-dBf" secondAttribute="leading" id="aaf-Pq-6f5"/>
                             <constraint firstItem="7LS-Mn-t4p" firstAttribute="leading" secondItem="zuH-ig-dBf" secondAttribute="leading" id="cdf-8a-RkB"/>
@@ -82,6 +91,7 @@
                     </view>
                     <connections>
                         <outlet property="lblTitle" destination="zuH-ig-dBf" id="Jx3-bn-TvB"/>
+                        <outlet property="slider" destination="Wch-gH-SaM" id="z5X-uB-QCt"/>
                         <outlet property="vView" destination="5ly-Gy-667" id="35y-rC-079"/>
                     </connections>
                 </viewController>

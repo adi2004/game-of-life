@@ -26,6 +26,7 @@
 		3A9D11C41CC7BD7000799645 /* StarsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A9D11C21CC7BD7000799645 /* StarsViewController.xib */; };
 		3A9D11C71CC7BF3800799645 /* StarsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9D11C51CC7BF3800799645 /* StarsCell.swift */; };
 		3A9D11C81CC7BF3800799645 /* StarsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A9D11C61CC7BF3800799645 /* StarsCell.xib */; };
+		3AF47E5B1CD2007700D8C370 /* SurveyQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF47E5A1CD2007700D8C370 /* SurveyQuestion.swift */; };
 		3AF920E41CD0A6F800DC97D9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF920E31CD0A6F800DC97D9 /* main.swift */; };
 		3AF920E91CD0AD9B00DC97D9 /* Tuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF920E81CD0AD9B00DC97D9 /* Tuple.swift */; };
 		3AF920EB1CD0ADE900DC97D9 /* Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF920EA1CD0ADE900DC97D9 /* Subscript.swift */; };
@@ -69,6 +70,7 @@
 		3A9D11C21CC7BD7000799645 /* StarsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StarsViewController.xib; sourceTree = "<group>"; };
 		3A9D11C51CC7BF3800799645 /* StarsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarsCell.swift; sourceTree = "<group>"; };
 		3A9D11C61CC7BF3800799645 /* StarsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StarsCell.xib; sourceTree = "<group>"; };
+		3AF47E5A1CD2007700D8C370 /* SurveyQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyQuestion.swift; sourceTree = "<group>"; };
 		3AF920E11CD0A6F800DC97D9 /* Swift Love */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Swift Love"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF920E31CD0A6F800DC97D9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3AF920E81CD0AD9B00DC97D9 /* Tuple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tuple.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				3AF920E31CD0A6F800DC97D9 /* main.swift */,
 				3AF920E81CD0AD9B00DC97D9 /* Tuple.swift */,
 				3AF920EA1CD0ADE900DC97D9 /* Subscript.swift */,
+				3AF47E5A1CD2007700D8C370 /* SurveyQuestion.swift */,
 			);
 			path = "Swift Love";
 			sourceTree = "<group>";
@@ -495,6 +498,7 @@
 				3AF920E91CD0AD9B00DC97D9 /* Tuple.swift in Sources */,
 				3AF920E41CD0A6F800DC97D9 /* main.swift in Sources */,
 				3AF920EB1CD0ADE900DC97D9 /* Subscript.swift in Sources */,
+				3AF47E5B1CD2007700D8C370 /* SurveyQuestion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -831,6 +835,7 @@
 				3AF920E61CD0A6F800DC97D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3AF9210D1CD0B09900DC97D9 /* Build configuration list for PBXNativeTarget "NIBless App" */ = {
 			isa = XCConfigurationList;
@@ -839,6 +844,7 @@
 				3AF9210F1CD0B09900DC97D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

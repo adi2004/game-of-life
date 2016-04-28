@@ -9,78 +9,74 @@
 import UIKit
 
 class GameView: UIView {
-  private var lastUpdatedPoint: Point?
-  let size: CGFloat = 10.0
-  var game: Game?
-
+  private var lastUpdatedPoint: Point = Point(x:0, y:0)
+  
+  // MARK: Public Variables
+  let fSize: CGFloat = 10.0
+  var game: Game
+  
+  // MARK: Constructors
+  required init?(coder aDecoder: NSCoder) {
+    game = Game()
+    super.init(coder: aDecoder)
+  }
+  
   // MARK: Life Cycle
   override func drawRect(rect: CGRect) {
-    if let gU = game {
-      for e in gU.entities {
-        //drawEntity(e)
-        drawSquareEntity(e)
-      }
+    let drawFunction: (_:Point) -> () = drawSquareEntity
+    for e in game.entities {
+      drawFunction(e)
     }
   }
-
+  
   // MARK: Touches
   override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
     updateEntity(touches)
     self.setNeedsDisplay()
   }
-
+  
   override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
     updateEntity(touches)
     self.setNeedsDisplay()
   }
-
-//  override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-//    updateEntity(touches)
-//    self.setNeedsDisplay()
-//  }
-
+  
+  // MARK: Helper Methods
   func drawEntity(e: Point) {
-    let path = UIBezierPath(roundedRect: CGRectMake(CGFloat(e.x) * size, CGFloat(e.y) * size, size, size), cornerRadius: size / 10)
+    let path = UIBezierPath(roundedRect: CGRectMake(CGFloat(e.x) * fSize, CGFloat(e.y) * fSize, fSize, fSize), cornerRadius: fSize / 10)
     UIColor.blueColor().setFill()
     path.fill()
   }
   
   func drawSquareEntity(e: Point) {
     let context = UIGraphicsGetCurrentContext()
-    let spaceing = size * 0.05
-    CGContextMoveToPoint   (context, CGFloat(e.x)     * size + spaceing, CGFloat(e.y)     * size + spaceing)
-    CGContextAddLineToPoint(context, CGFloat(e.x)     * size + spaceing, CGFloat(e.y + 1) * size - spaceing)
-    CGContextAddLineToPoint(context, CGFloat(e.x + 1) * size - spaceing, CGFloat(e.y + 1) * size - spaceing)
-    CGContextAddLineToPoint(context, CGFloat(e.x + 1) * size - spaceing, CGFloat(e.y)     * size + spaceing)
-    CGContextAddLineToPoint(context, CGFloat(e.x)     * size + spaceing, CGFloat(e.y)     * size + spaceing)
+    let spacing = fSize * 0.05
+    let fX0 = CGFloat(e.x) * fSize + spacing
+    let fY0 = CGFloat(e.y) * fSize + spacing
+    let fXMax = CGFloat(e.x + 1) * fSize - spacing
+    let fYMax = CGFloat(e.y + 1) * fSize - spacing
+    CGContextMoveToPoint   (context, fX0,   fY0)
+    CGContextAddLineToPoint(context, fX0,   fYMax)
+    CGContextAddLineToPoint(context, fXMax, fYMax)
+    CGContextAddLineToPoint(context, fXMax, fY0)
+    CGContextAddLineToPoint(context, fX0,   fY0)
     CGContextSetFillColorWithColor(context, UIColor.redColor().CGColor)
     CGContextFillPath(context)
-
-//    let context = UIGraphicsGetCurrentContext()
-//    CGContextSetLineWidth(context, 4.0)
-//    CGContextSetFillColor(context, UIColor.blueColor().CGColor)
-//    //CGContextSetStrokeColorWithColor(context, UIColor.blueColor().CGColor)
-//    let rectangle = CGRectMake(60,170,200,80)
-//    CGContextAddRect(context, rectangle)
-//    CGContextStrokePath(context)
-//    let path = CGRectMake(CGFloat(e.x) * size, CGFloat(e.y) * size, size, size)
-//    UIColor.blueColor().setFill()
-//    path.fill()
   }
-
+  
   func updateEntity(touches: Set<UITouch>) {
     for t in touches {
-      let x = Int(t.locationInView(self).x / size)
-      let y = Int(t.locationInView(self).y / size)
-      let p = Point(x: x, y: y)
-      let gameU = game!
-//      if let lastUpdatedPointU = lastUpdatedPoint! {
-        if gameU.entities.contains(p) {
-          gameU.entities.remove(p)
+      let iX = Int(t.locationInView(self).x / fSize)
+      let iY = Int(t.locationInView(self).y / fSize)
+      let point = Point(x: iX, y: iY)
+      if point != lastUpdatedPoint {
+        lastUpdatedPoint = point
+        if game.entities.contains(point) {
+          game.entities.remove(point)
         } else {
-          gameU.entities.insert(p)
+          game.entities.insert(point)
         }
-//      }
+      }
     }
   }
+  
 }

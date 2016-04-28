@@ -11,45 +11,67 @@ import UIKit
 class GameViewController: UIViewController {
   @IBOutlet weak var vView: GameView!
   @IBOutlet weak var lblTitle: UILabel!
-  var g: Game = Game(nrOfEntities: 30, x: 10, y: 10, width: 10, height: 10)
-  var timer: NSTimer?
-  var currentTimerValue: Int = 0
-  let timerValues: [Double] = [Double.infinity, 1000, 300, 100, 50, 10, 0]
-
+  @IBOutlet weak var slider: UISlider!
+  var game: Game = Game(nrOfEntities: 30, x: 10, y: 10, width: 10, height: 10)
+  var timer: NSTimer
+  var bIsTimerStarted: Bool
+  
+  required init?(coder aDecoder: NSCoder) {
+    timer = NSTimer.init()
+    bIsTimerStarted = false
+    super.init(coder: aDecoder)
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-
+    
     doRefresh(self)
-    timer = NSTimer.init()
   }
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-
+  
   @IBAction func doRefresh(sender: AnyObject) {
-    g = Game(nrOfEntities: 30, x: 10, y: 10, width: 10, height: 10)
-    updateVView(g)
+    game = Game(nrOfEntities: 30, x: 10, y: 10, width: 10, height: 10)
+    updateVView(game)
   }
-
+  
   @IBAction func doNext(sender: AnyObject) {
-    g.next()
-    updateVView(g)
+    game.next()
+    updateVView(game)
   }
-
+  
   @IBAction func doAnimate(sender: AnyObject) {
-    currentTimerValue = (currentTimerValue + 1) % timerValues.count
-    timer?.invalidate()
-    timer = NSTimer.scheduledTimerWithTimeInterval(timerValues[currentTimerValue] / 1000, target: self, selector: #selector(doNext), userInfo: nil, repeats: true)
-    (sender as! UIButton).setTitle("Next gen in \(timerValues[currentTimerValue]) ms", forState: UIControlState.Normal)
+    let button = sender as! UIButton
+    if bIsTimerStarted {
+      button.setTitle("Start", forState: UIControlState.Normal)
+      bIsTimerStarted = false
+      timer.invalidate()
+    } else {
+      button.setTitle("Stop", forState: UIControlState.Normal)
+      bIsTimerStarted = true
+      updateTimer(getLogarithmicValue(slider.value))
+    }
   }
-
+  
+  @IBAction func doValueChanged(sender: AnyObject) {
+    if bIsTimerStarted {
+      updateTimer(getLogarithmicValue(slider.value))
+    }
+  }
+  
   func updateVView(g: Game) {
     lblTitle.text = "Generation \(g.generation). Living \(g.entities.count)"
     vView.game = g
     vView.setNeedsDisplay()
   }
-
+  
+  func updateTimer(fValue: Double) {
+    timer.invalidate()
+    timer = NSTimer.scheduledTimerWithTimeInterval(fValue, target: self, selector: #selector(doNext), userInfo: nil, repeats: true)
+  }
+  
+  func getLogarithmicValue(fValue:Float) -> Double {
+    let max = 5.0
+    let out = (exp(Double(fValue) * max) - 1.0) / exp(max)
+    return round(out * 1000)/1000
+  }
 }
 
