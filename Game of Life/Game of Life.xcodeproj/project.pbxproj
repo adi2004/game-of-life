@@ -16,35 +16,7 @@
 		3A9D11871CC7A45A00799645 /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9D11851CC7A45A00799645 /* Game.storyboard */; };
 		3A9D11891CC7A45A00799645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A9D11881CC7A45A00799645 /* Assets.xcassets */; };
 		3A9D118C1CC7A45A00799645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9D118A1CC7A45A00799645 /* LaunchScreen.storyboard */; };
-		3A9D11B01CC7A49A00799645 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9D11AF1CC7A49A00799645 /* AppDelegate.swift */; };
-		3A9D11B21CC7A49A00799645 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9D11B11CC7A49A00799645 /* MainViewController.swift */; };
-		3A9D11B51CC7A49A00799645 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9D11B31CC7A49A00799645 /* Main.storyboard */; };
-		3A9D11B71CC7A49A00799645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A9D11B61CC7A49A00799645 /* Assets.xcassets */; };
-		3A9D11BA1CC7A49A00799645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9D11B81CC7A49A00799645 /* LaunchScreen.storyboard */; };
-		3A9D11C01CC7ADAD00799645 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9D11BF1CC7ADAD00799645 /* MainCell.swift */; };
-		3A9D11C31CC7BD7000799645 /* StarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9D11C11CC7BD7000799645 /* StarsViewController.swift */; };
-		3A9D11C41CC7BD7000799645 /* StarsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A9D11C21CC7BD7000799645 /* StarsViewController.xib */; };
-		3A9D11C71CC7BF3800799645 /* StarsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9D11C51CC7BF3800799645 /* StarsCell.swift */; };
-		3A9D11C81CC7BF3800799645 /* StarsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A9D11C61CC7BF3800799645 /* StarsCell.xib */; };
-		3AF47E5B1CD2007700D8C370 /* SurveyQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF47E5A1CD2007700D8C370 /* SurveyQuestion.swift */; };
-		3AF920E41CD0A6F800DC97D9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF920E31CD0A6F800DC97D9 /* main.swift */; };
-		3AF920E91CD0AD9B00DC97D9 /* Tuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF920E81CD0AD9B00DC97D9 /* Tuple.swift */; };
-		3AF920EB1CD0ADE900DC97D9 /* Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF920EA1CD0ADE900DC97D9 /* Subscript.swift */; };
-		3AF921081CD0B09900DC97D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF921071CD0B09900DC97D9 /* main.m */; };
-		3AF9210C1CD0B09900DC97D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AF9210B1CD0B09900DC97D9 /* Images.xcassets */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		3AF920DF1CD0A6F800DC97D9 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3A1E2A5E1CC8F51100A65F5A /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
@@ -58,63 +30,10 @@
 		3A9D11881CC7A45A00799645 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A9D118B1CC7A45A00799645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A9D118D1CC7A45A00799645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A9D11AD1CC7A49A00799645 /* Stars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stars.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A9D11AF1CC7A49A00799645 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3A9D11B11CC7A49A00799645 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		3A9D11B41CC7A49A00799645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3A9D11B61CC7A49A00799645 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3A9D11B91CC7A49A00799645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3A9D11BB1CC7A49A00799645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A9D11BF1CC7ADAD00799645 /* MainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
-		3A9D11C11CC7BD7000799645 /* StarsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarsViewController.swift; sourceTree = "<group>"; };
-		3A9D11C21CC7BD7000799645 /* StarsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StarsViewController.xib; sourceTree = "<group>"; };
-		3A9D11C51CC7BF3800799645 /* StarsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarsCell.swift; sourceTree = "<group>"; };
-		3A9D11C61CC7BF3800799645 /* StarsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StarsCell.xib; sourceTree = "<group>"; };
-		3AF47E5A1CD2007700D8C370 /* SurveyQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyQuestion.swift; sourceTree = "<group>"; };
-		3AF920E11CD0A6F800DC97D9 /* Swift Love */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Swift Love"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3AF920E31CD0A6F800DC97D9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		3AF920E81CD0AD9B00DC97D9 /* Tuple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tuple.swift; sourceTree = "<group>"; };
-		3AF920EA1CD0ADE900DC97D9 /* Subscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subscript.swift; sourceTree = "<group>"; };
-		3AF920F21CD0B09900DC97D9 /* NIBless App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NIBless App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3AF920F51CD0B09900DC97D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3AF920F81CD0B09900DC97D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		3AF920F91CD0B09900DC97D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3AF920FB1CD0B09900DC97D9 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		3AF920FD1CD0B09900DC97D9 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		3AF920FF1CD0B09900DC97D9 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		3AF921011CD0B09900DC97D9 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		3AF921031CD0B09900DC97D9 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		3AF921051CD0B09900DC97D9 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = folder; name = .gitkeep; path = ..; sourceTree = "<group>"; };
-		3AF921061CD0B09900DC97D9 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
-		3AF921071CD0B09900DC97D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3AF921091CD0B09900DC97D9 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
-		3AF9210A1CD0B09900DC97D9 /* uncrustify.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; name = uncrustify.cfg; path = ../uncrustify.cfg; sourceTree = "<group>"; };
-		3AF9210B1CD0B09900DC97D9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3A9D117B1CC7A45A00799645 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3A9D11AA1CC7A49A00799645 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3AF920DE1CD0A6F800DC97D9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3AF920ED1CD0B09900DC97D9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -128,9 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				3A9D11801CC7A45A00799645 /* Game of Life */,
-				3A9D11AE1CC7A49A00799645 /* Stars */,
-				3AF920E21CD0A6F800DC97D9 /* Swift Love */,
-				3AF920F31CD0B09900DC97D9 /* NIBless App */,
 				3A9D117F1CC7A45A00799645 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -139,9 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				3A9D117E1CC7A45A00799645 /* Game of Life.app */,
-				3A9D11AD1CC7A49A00799645 /* Stars.app */,
-				3AF920E11CD0A6F800DC97D9 /* Swift Love */,
-				3AF920F21CD0B09900DC97D9 /* NIBless App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,128 +74,6 @@
 				3A250F531CCA66400087ECDD /* Point.swift */,
 			);
 			path = "Game of Life";
-			sourceTree = "<group>";
-		};
-		3A9D11AE1CC7A49A00799645 /* Stars */ = {
-			isa = PBXGroup;
-			children = (
-				3A9D11AF1CC7A49A00799645 /* AppDelegate.swift */,
-				3A9D11B61CC7A49A00799645 /* Assets.xcassets */,
-				3A9D11BB1CC7A49A00799645 /* Info.plist */,
-				3A9D11B81CC7A49A00799645 /* LaunchScreen.storyboard */,
-				3A9D11B31CC7A49A00799645 /* Main.storyboard */,
-				3A9D11BF1CC7ADAD00799645 /* MainCell.swift */,
-				3A9D11B11CC7A49A00799645 /* MainViewController.swift */,
-				3A9D11C51CC7BF3800799645 /* StarsCell.swift */,
-				3A9D11C61CC7BF3800799645 /* StarsCell.xib */,
-				3A9D11C11CC7BD7000799645 /* StarsViewController.swift */,
-				3A9D11C21CC7BD7000799645 /* StarsViewController.xib */,
-			);
-			path = Stars;
-			sourceTree = "<group>";
-		};
-		3AF920E21CD0A6F800DC97D9 /* Swift Love */ = {
-			isa = PBXGroup;
-			children = (
-				3AF920E31CD0A6F800DC97D9 /* main.swift */,
-				3AF920E81CD0AD9B00DC97D9 /* Tuple.swift */,
-				3AF920EA1CD0ADE900DC97D9 /* Subscript.swift */,
-				3AF47E5A1CD2007700D8C370 /* SurveyQuestion.swift */,
-			);
-			path = "Swift Love";
-			sourceTree = "<group>";
-		};
-		3AF920F31CD0B09900DC97D9 /* NIBless App */ = {
-			isa = PBXGroup;
-			children = (
-				3AF9210B1CD0B09900DC97D9 /* Images.xcassets */,
-				3AF920F61CD0B09900DC97D9 /* Classes */,
-				3AF920F41CD0B09900DC97D9 /* Supporting Files */,
-			);
-			path = "NIBless App";
-			sourceTree = "<group>";
-		};
-		3AF920F41CD0B09900DC97D9 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				3AF920F51CD0B09900DC97D9 /* Info.plist */,
-				3AF921061CD0B09900DC97D9 /* .gitignore */,
-				3AF921071CD0B09900DC97D9 /* main.m */,
-				3AF921091CD0B09900DC97D9 /* Podfile */,
-				3AF9210A1CD0B09900DC97D9 /* uncrustify.cfg */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		3AF920F61CD0B09900DC97D9 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				3AF920F71CD0B09900DC97D9 /* AppDelegate */,
-				3AF920FA1CD0B09900DC97D9 /* Controllers */,
-				3AF920FC1CD0B09900DC97D9 /* Managers */,
-				3AF920FE1CD0B09900DC97D9 /* Models */,
-				3AF921001CD0B09900DC97D9 /* Protocols */,
-				3AF921021CD0B09900DC97D9 /* Utilities */,
-				3AF921041CD0B09900DC97D9 /* Views */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		3AF920F71CD0B09900DC97D9 /* AppDelegate */ = {
-			isa = PBXGroup;
-			children = (
-				3AF920F81CD0B09900DC97D9 /* AppDelegate.h */,
-				3AF920F91CD0B09900DC97D9 /* AppDelegate.m */,
-			);
-			path = AppDelegate;
-			sourceTree = "<group>";
-		};
-		3AF920FA1CD0B09900DC97D9 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				3AF920FB1CD0B09900DC97D9 /* .gitkeep */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		3AF920FC1CD0B09900DC97D9 /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				3AF920FD1CD0B09900DC97D9 /* .gitkeep */,
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
-		3AF920FE1CD0B09900DC97D9 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				3AF920FF1CD0B09900DC97D9 /* .gitkeep */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		3AF921001CD0B09900DC97D9 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				3AF921011CD0B09900DC97D9 /* .gitkeep */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		3AF921021CD0B09900DC97D9 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				3AF921031CD0B09900DC97D9 /* .gitkeep */,
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
-		3AF921041CD0B09900DC97D9 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				3AF921051CD0B09900DC97D9 /* .gitkeep */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,59 +96,6 @@
 			productReference = 3A9D117E1CC7A45A00799645 /* Game of Life.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3A9D11AC1CC7A49A00799645 /* Stars */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3A9D11BC1CC7A49A00799645 /* Build configuration list for PBXNativeTarget "Stars" */;
-			buildPhases = (
-				3A9D11A91CC7A49A00799645 /* Sources */,
-				3A9D11AA1CC7A49A00799645 /* Frameworks */,
-				3A9D11AB1CC7A49A00799645 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Stars;
-			productName = Stars;
-			productReference = 3A9D11AD1CC7A49A00799645 /* Stars.app */;
-			productType = "com.apple.product-type.application";
-		};
-		3AF920E01CD0A6F800DC97D9 /* Swift Love */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3AF920E71CD0A6F800DC97D9 /* Build configuration list for PBXNativeTarget "Swift Love" */;
-			buildPhases = (
-				3AF920DD1CD0A6F800DC97D9 /* Sources */,
-				3AF920DE1CD0A6F800DC97D9 /* Frameworks */,
-				3AF920DF1CD0A6F800DC97D9 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Swift Love";
-			productName = "Swift Love";
-			productReference = 3AF920E11CD0A6F800DC97D9 /* Swift Love */;
-			productType = "com.apple.product-type.tool";
-		};
-		3AF920F11CD0B09900DC97D9 /* NIBless App */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3AF9210D1CD0B09900DC97D9 /* Build configuration list for PBXNativeTarget "NIBless App" */;
-			buildPhases = (
-				3AF920EC1CD0B09900DC97D9 /* Sources */,
-				3AF920ED1CD0B09900DC97D9 /* Frameworks */,
-				3AF920EE1CD0B09900DC97D9 /* Resources */,
-				3AF920EF1CD0B09900DC97D9 /* ShellScript */,
-				3AF920F01CD0B09900DC97D9 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "NIBless App";
-			productName = "NIBless App";
-			productReference = 3AF920F21CD0B09900DC97D9 /* NIBless App.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -369,15 +107,6 @@
 				ORGANIZATIONNAME = infloresc.ro;
 				TargetAttributes = {
 					3A9D117D1CC7A45A00799645 = {
-						CreatedOnToolsVersion = 7.3;
-					};
-					3A9D11AC1CC7A49A00799645 = {
-						CreatedOnToolsVersion = 7.3;
-					};
-					3AF920E01CD0A6F800DC97D9 = {
-						CreatedOnToolsVersion = 7.3;
-					};
-					3AF920F11CD0B09900DC97D9 = {
 						CreatedOnToolsVersion = 7.3;
 					};
 				};
@@ -396,9 +125,6 @@
 			projectRoot = "";
 			targets = (
 				3A9D117D1CC7A45A00799645 /* Game of Life */,
-				3A9D11AC1CC7A49A00799645 /* Stars */,
-				3AF920E01CD0A6F800DC97D9 /* Swift Love */,
-				3AF920F11CD0B09900DC97D9 /* NIBless App */,
 			);
 		};
 /* End PBXProject section */
@@ -414,56 +140,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3A9D11AB1CC7A49A00799645 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3A9D11BA1CC7A49A00799645 /* LaunchScreen.storyboard in Resources */,
-				3A9D11C41CC7BD7000799645 /* StarsViewController.xib in Resources */,
-				3A9D11C81CC7BF3800799645 /* StarsCell.xib in Resources */,
-				3A9D11B71CC7A49A00799645 /* Assets.xcassets in Resources */,
-				3A9D11B51CC7A49A00799645 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3AF920EE1CD0B09900DC97D9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3AF9210C1CD0B09900DC97D9 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		3AF920EF1CD0B09900DC97D9 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = "#!/bin/sh";
-			shellScript = "TAGS=\"TODO:|FIXME:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.h\" -or -name \"*.m\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
-		};
-		3AF920F01CD0B09900DC97D9 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = "#!/bin/sh";
-			shellScript = "branch=${1:-'master'}\nbuildNumber=$(expr $(git rev-list $branch --count) - $(git rev-list HEAD..$branch --count))\necho \"Updating build number to $buildNumber using branch '$branch'.\"\necho \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3A9D117A1CC7A45A00799645 /* Sources */ = {
@@ -476,37 +153,6 @@
 				3A1E2A5F1CC8F51100A65F5A /* GameView.swift in Sources */,
 				3A9D11821CC7A45A00799645 /* AppDelegate.swift in Sources */,
 				3A250F521CCA47F30087ECDD /* Game.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3A9D11A91CC7A49A00799645 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3A9D11C01CC7ADAD00799645 /* MainCell.swift in Sources */,
-				3A9D11C31CC7BD7000799645 /* StarsViewController.swift in Sources */,
-				3A9D11B21CC7A49A00799645 /* MainViewController.swift in Sources */,
-				3A9D11B01CC7A49A00799645 /* AppDelegate.swift in Sources */,
-				3A9D11C71CC7BF3800799645 /* StarsCell.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3AF920DD1CD0A6F800DC97D9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3AF920E91CD0AD9B00DC97D9 /* Tuple.swift in Sources */,
-				3AF920E41CD0A6F800DC97D9 /* main.swift in Sources */,
-				3AF920EB1CD0ADE900DC97D9 /* Subscript.swift in Sources */,
-				3AF47E5B1CD2007700D8C370 /* SurveyQuestion.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3AF920EC1CD0B09900DC97D9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3AF921081CD0B09900DC97D9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,22 +171,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				3A9D118B1CC7A45A00799645 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		3A9D11B31CC7A49A00799645 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3A9D11B41CC7A49A00799645 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3A9D11B81CC7A49A00799645 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3A9D11B91CC7A49A00799645 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -653,151 +283,6 @@
 			};
 			name = Release;
 		};
-		3A9D11BD1CC7A49A00799645 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Stars/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ro.infloresc.game-of-life.Stars";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		3A9D11BE1CC7A49A00799645 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Stars/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ro.infloresc.game-of-life.Stars";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		3AF920E51CD0A6F800DC97D9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		3AF920E61CD0A6F800DC97D9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		3AF9210E1CD0B09900DC97D9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
-				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
-				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
-				CLANG_WARN_ASSIGN_ENUM = YES;
-				CLANG_WARN_CXX0X_EXTENSIONS = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
-				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
-				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
-				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
-				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
-				CLANG_WARN__EXIT_TIME_DESTRUCTORS = YES;
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
-				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
-				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
-				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
-				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
-				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
-				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
-				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
-				GCC_WARN_PEDANTIC = YES;
-				GCC_WARN_SHADOW = YES;
-				GCC_WARN_SIGN_COMPARE = YES;
-				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
-				GCC_WARN_UNKNOWN_PRAGMAS = YES;
-				GCC_WARN_UNUSED_LABEL = YES;
-				GCC_WARN_UNUSED_PARAMETER = YES;
-				INFOPLIST_FILE = "NIBless App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WARNING_CFLAGS = (
-					"-Weverything",
-					"-Wno-objc-missing-property-synthesis",
-					"-Wno-unused-parameter",
-				);
-			};
-			name = Debug;
-		};
-		3AF9210F1CD0B09900DC97D9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
-				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
-				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
-				CLANG_WARN_ASSIGN_ENUM = YES;
-				CLANG_WARN_CXX0X_EXTENSIONS = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
-				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
-				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
-				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
-				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
-				CLANG_WARN__EXIT_TIME_DESTRUCTORS = YES;
-				COPY_PHASE_STRIP = YES;
-				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
-				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
-				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
-				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
-				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
-				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
-				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
-				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
-				GCC_WARN_PEDANTIC = YES;
-				GCC_WARN_SHADOW = YES;
-				GCC_WARN_SIGN_COMPARE = YES;
-				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
-				GCC_WARN_UNKNOWN_PRAGMAS = YES;
-				GCC_WARN_UNUSED_LABEL = YES;
-				GCC_WARN_UNUSED_PARAMETER = YES;
-				INFOPLIST_FILE = "NIBless App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WARNING_CFLAGS = (
-					"-Weverything",
-					"-Wno-objc-missing-property-synthesis",
-				);
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -815,33 +300,6 @@
 			buildConfigurations = (
 				3A9D11911CC7A45A00799645 /* Debug */,
 				3A9D11921CC7A45A00799645 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3A9D11BC1CC7A49A00799645 /* Build configuration list for PBXNativeTarget "Stars" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3A9D11BD1CC7A49A00799645 /* Debug */,
-				3A9D11BE1CC7A49A00799645 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3AF920E71CD0A6F800DC97D9 /* Build configuration list for PBXNativeTarget "Swift Love" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3AF920E51CD0A6F800DC97D9 /* Debug */,
-				3AF920E61CD0A6F800DC97D9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3AF9210D1CD0B09900DC97D9 /* Build configuration list for PBXNativeTarget "NIBless App" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3AF9210E1CD0B09900DC97D9 /* Debug */,
-				3AF9210F1CD0B09900DC97D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

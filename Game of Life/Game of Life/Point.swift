@@ -7,19 +7,19 @@
 //
 
 class Point: Hashable {
-  var x: Int = 0
-  var y: Int = 0
-  var hashValue: Int {
-    get {
-      return "\(x)\(y)".hashValue
+    var x: Int = 0
+    var y: Int = 0
+    var hashValue: Int {
+        get {
+            return "\(x)\(y)".hashValue
+        }
     }
-  }
-  init(x: Int, y: Int) {
-    self.x = x
-    self.y = y
-  }
+    init(x: Int, y: Int) {
+        self.x = x
+        self.y = y
+    }
 }
 
 func == (lhs: Point, rhs: Point) -> Bool {
-  return lhs.x == rhs.x && lhs.y == rhs.y
+    return lhs.x == rhs.x && lhs.y == rhs.y
 }
