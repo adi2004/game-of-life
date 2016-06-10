@@ -8,11 +8,15 @@
 
 import UIKit
 
-class Game: NSObject {
+public class Game: NSObject {
     var entities = Set<Point>()
     var generation: Int = 0
     
     override init() {
+    }
+    
+    init(_ entities: Set<Point>) {
+        self.entities = entities
     }
     
     init(nrOfEntities nr: Int, x: UInt32, y: UInt32, width: UInt32, height: UInt32) {

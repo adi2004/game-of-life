@@ -6,10 +6,10 @@
 //  Copyright © 2016 infloresc.ro. All rights reserved.
 //
 
-class Point: Hashable {
+public class Point: Hashable {
     var x: Int = 0
     var y: Int = 0
-    var hashValue: Int {
+    public var hashValue: Int {
         get {
             return "\(x)\(y)".hashValue
         }
@@ -20,6 +20,6 @@ class Point: Hashable {
     }
 }
 
-func == (lhs: Point, rhs: Point) -> Bool {
+public func == (lhs: Point, rhs: Point) -> Bool {
     return lhs.x == rhs.x && lhs.y == rhs.y
 }
