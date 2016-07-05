@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import CircleMenu
 
 class GameViewController: UIViewController {
     @IBOutlet weak var vView: GameView!
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var button: CircleMenu!
     var game: Game = Game(nrOfEntities: 30, x: 10, y: 10, width: 10, height: 10)
     var timer: NSTimer
     var bIsTimerStarted: Bool
@@ -27,6 +29,7 @@ class GameViewController: UIViewController {
         
         self.addParallaxToView(vView, intensity: 25)
         doRefresh(self)
+        button.delegate = self
     }
     
     @IBAction func doRefresh(sender: AnyObject) {
@@ -86,5 +89,20 @@ class GameViewController: UIViewController {
         group.motionEffects = [horizontalMotionEffect, verticalMotionEffect]
         view.addMotionEffect(group)
     }
+}
+
+extension GameViewController: CircleMenuDelegate {
+    // configure buttons
+    func circleMenu(circleMenu: CircleMenu, willDisplay button: UIButton, atIndex: Int) {
+        button.setImage(UIImage(imageLiteral: "menu-icon"), forState: .Normal)
+        button.backgroundColor = UIColor.yellowColor()
+        button.tintColor = UIColor.redColor()
+    }
+    
+    // call before animation
+//    optional func circleMenu(circleMenu: CircleMenu, buttonWillSelected button: CircleMenuButton, atIndex: Int)
+    
+    // call after animation
+//    optional func circleMenu(circleMenu: CircleMenu, buttonDidSelected button: CircleMenuButton, atIndex: Int)
 }
 
