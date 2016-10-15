@@ -20,7 +20,6 @@ class GameViewController: UIViewController {
     required init?(coder aDecoder: NSCoder) {
         timer = Timer.init()
         isStarted = false
-        playButton.tintColor = UIColor.yellow
         super.init(coder: aDecoder)
     }
     
@@ -44,11 +43,11 @@ class GameViewController: UIViewController {
     @IBAction func doAnimate(_ sender: AnyObject) {
         let button = sender as! UIButton
         if isStarted {
-            button.setTitle("Start", for: UIControlState())
+            button.tintColor = UIColor.yellow
             isStarted = false
             timer.invalidate()
         } else {
-            button.setTitle("Stop", for: UIControlState())
+            button.tintColor = UIColor.red
             isStarted = true
             updateTimer(getLogarithmicValue(slider.value))
         }
@@ -66,14 +65,14 @@ class GameViewController: UIViewController {
         gameView.setNeedsDisplay()
     }
     
-    func updateTimer(_ fValue: Double) {
+    func updateTimer(_ timeInterval: Double) {
         timer.invalidate()
-        timer = Timer.scheduledTimer(timeInterval: fValue, target: self, selector: #selector(doNext), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: timeInterval, target: self, selector: #selector(doNext), userInfo: nil, repeats: true)
     }
     
-    func getLogarithmicValue(_ fValue:Float) -> Double {
+    func getLogarithmicValue(_ value:Float) -> Double {
         let max = 5.0
-        let out = (exp(Double(fValue) * max) - 1.0) / exp(max)
+        let out = (exp(Double(value) * max) - 1.0) / exp(max)
         return round(out * 1000)/1000
     }
     

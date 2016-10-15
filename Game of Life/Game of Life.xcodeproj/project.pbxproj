@@ -186,6 +186,7 @@
 					3A9D117D1CC7A45A00799645 = {
 						CreatedOnToolsVersion = 7.3;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 					3AF35D561D09DFB000040EC6 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -426,11 +427,14 @@
 			baseConfigurationReference = 2436FDDED774886C1637E6F8 /* Pods-Game of Life.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Game of Life/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ro.infloresc.game-of-life.Game-of-Life";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -439,11 +443,14 @@
 			baseConfigurationReference = 8057AEF0CB3CCEB8EBEE0F45 /* Pods-Game of Life.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Game of Life/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ro.infloresc.game-of-life.Game-of-Life";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

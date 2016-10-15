@@ -59,7 +59,7 @@ class GameView: UIView {
         context?.addLine(to: CGPoint(x: xMax, y: yMax))
         context?.addLine(to: CGPoint(x: xMax, y: y0))
         context?.addLine(to: CGPoint(x: x0, y: y0))
-        context?.setFillColor(UIColor.red.cgColor)
+        context?.setFillColor(UIColor.cyan.cgColor)
         context?.fillPath()
     }
     

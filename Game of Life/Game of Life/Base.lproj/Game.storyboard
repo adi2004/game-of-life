@@ -3,14 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Game View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="GameViewController" customModule="Game_of_Life" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController extendedLayoutIncludesOpaqueBars="YES" modalTransitionStyle="partialCurl" modalPresentationStyle="currentContext" id="BYZ-38-t0r" customClass="GameViewController" customModule="Game_of_Life" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -20,51 +19,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="oGL-7E-nl7"/>
-                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ly-Gy-667" customClass="GameView" customModule="Game_of_Life" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Game of Life!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zuH-ig-dBf">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ly-Gy-667" customClass="GameView" customModule="Game_of_Life" customModuleProvider="target">
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Game of Life!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zuH-ig-dBf">
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="XH1-Ki-b1C"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7LS-Mn-t4p">
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Refresh"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonsCount">
-                                        <integer key="value" value="3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="distance">
-                                        <real key="value" value="4"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="showDelay">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7LS-Mn-t4p">
+                                <state key="normal" title="Refresh">
+                                    <color key="titleColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="doRefresh:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Ig-tD-DMl"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cs-YO-1ry">
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="doNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4J9-4s-hSC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6BQ-kJ-aBW">
-                                <state key="normal" title="Start"/>
-                                <connections>
-                                    <action selector="doAnimate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H3G-1u-a4l"/>
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Wch-gH-SaM">
@@ -72,50 +43,38 @@
                                     <action selector="doValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Bvv-ij-a5n"/>
                                 </connections>
                             </slider>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7A-m6-QVT">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="1Zl-ri-dcV"/>
-                                    <constraint firstAttribute="height" constant="50" id="dOE-9C-gnb"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7A-m6-QVT">
+                                <color key="tintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="play-icon"/>
+                                <connections>
+                                    <action selector="doAnimate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yFj-sR-PE0"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="Wch-gH-SaM" firstAttribute="trailing" secondItem="zuH-ig-dBf" secondAttribute="trailing" id="1TK-r7-8u5"/>
                             <constraint firstItem="oGL-7E-nl7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1qi-RM-ViH"/>
-                            <constraint firstItem="Wch-gH-SaM" firstAttribute="leading" secondItem="6BQ-kJ-aBW" secondAttribute="trailing" constant="8" symbolic="YES" id="2L4-Mp-beB"/>
                             <constraint firstItem="7LS-Mn-t4p" firstAttribute="top" secondItem="zuH-ig-dBf" secondAttribute="bottom" constant="8" symbolic="YES" id="2bY-n5-8E0"/>
                             <constraint firstItem="oGL-7E-nl7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="30S-mL-oa4"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="c7A-m6-QVT" secondAttribute="bottom" constant="20" id="5Ab-Rn-vHd"/>
-                            <constraint firstItem="1cs-YO-1ry" firstAttribute="leading" secondItem="7LS-Mn-t4p" secondAttribute="trailing" constant="8" symbolic="YES" id="7Fe-7Z-bDM"/>
-                            <constraint firstItem="5ly-Gy-667" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Dre-oR-bXW"/>
+                            <constraint firstItem="5ly-Gy-667" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="Dre-oR-bXW"/>
                             <constraint firstAttribute="leading" secondItem="zuH-ig-dBf" secondAttribute="leading" id="Fj1-wi-cdt"/>
                             <constraint firstItem="5ly-Gy-667" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="HOD-RG-Puh"/>
                             <constraint firstAttribute="trailing" secondItem="oGL-7E-nl7" secondAttribute="trailing" id="HQe-nG-IJQ"/>
-                            <constraint firstAttribute="bottom" secondItem="c7A-m6-QVT" secondAttribute="bottom" constant="20" symbolic="YES" id="Jee-lb-w7Q"/>
                             <constraint firstAttribute="trailing" secondItem="zuH-ig-dBf" secondAttribute="trailing" id="M7X-zG-h6a"/>
                             <constraint firstAttribute="bottom" secondItem="oGL-7E-nl7" secondAttribute="bottom" id="Pak-FC-BZg"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5ly-Gy-667" secondAttribute="bottom" id="Q9C-vm-RuF"/>
-                            <constraint firstItem="Wch-gH-SaM" firstAttribute="top" secondItem="6BQ-kJ-aBW" secondAttribute="top" id="VFI-ae-O5p"/>
-                            <constraint firstItem="c7A-m6-QVT" firstAttribute="centerX" secondItem="zuH-ig-dBf" secondAttribute="centerX" id="a7O-TP-0V8"/>
+                            <constraint firstItem="Wch-gH-SaM" firstAttribute="top" secondItem="7LS-Mn-t4p" secondAttribute="top" id="QvG-5v-xv5"/>
                             <constraint firstItem="7LS-Mn-t4p" firstAttribute="leading" secondItem="zuH-ig-dBf" secondAttribute="leading" id="cdf-8a-RkB"/>
                             <constraint firstItem="c7A-m6-QVT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hnb-NZ-hwc"/>
                             <constraint firstItem="oGL-7E-nl7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mMK-z6-LIu"/>
-                            <constraint firstItem="6BQ-kJ-aBW" firstAttribute="leading" secondItem="1cs-YO-1ry" secondAttribute="trailing" constant="8" symbolic="YES" id="rN7-Pi-Wpe"/>
-                            <constraint firstItem="zuH-ig-dBf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="sVd-zX-xsa"/>
-                            <constraint firstItem="6BQ-kJ-aBW" firstAttribute="top" secondItem="zuH-ig-dBf" secondAttribute="bottom" constant="8" id="uE9-a5-5KT"/>
+                            <constraint firstItem="Wch-gH-SaM" firstAttribute="leading" secondItem="7LS-Mn-t4p" secondAttribute="trailing" constant="8" symbolic="YES" id="oXd-bJ-KnY"/>
+                            <constraint firstItem="zuH-ig-dBf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="u47-TQ-YdB"/>
                             <constraint firstItem="oGL-7E-nl7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yAq-mN-9n6"/>
                             <constraint firstItem="5ly-Gy-667" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yLM-7m-KWf"/>
-                            <constraint firstItem="1cs-YO-1ry" firstAttribute="top" secondItem="zuH-ig-dBf" secondAttribute="bottom" constant="8" id="zC5-3t-u65"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="Jee-lb-w7Q"/>
-                                <exclude reference="a7O-TP-0V8"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="gameInfo" destination="zuH-ig-dBf" id="OVl-EW-q81"/>
@@ -126,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="270" y="377"/>
+            <point key="canvasLocation" x="47.200000000000003" y="-33.733133433283363"/>
         </scene>
     </scenes>
     <resources>
