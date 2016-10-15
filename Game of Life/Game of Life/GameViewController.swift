@@ -43,11 +43,11 @@ class GameViewController: UIViewController {
     @IBAction func doAnimate(_ sender: AnyObject) {
         let button = sender as! UIButton
         if isStarted {
-            button.tintColor = UIColor.yellow
+            button.setImage(UIImage.init(named: "play-icon"), for: .normal)
             isStarted = false
             timer.invalidate()
         } else {
-            button.tintColor = UIColor.red
+            button.setImage(UIImage.init(named: "pause-icon"), for: .normal)
             isStarted = true
             updateTimer(getLogarithmicValue(slider.value))
         }
