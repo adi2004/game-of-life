@@ -12,7 +12,7 @@ class GameView: UIView {
     fileprivate var lastUpdatedPoint: Point = Point(x:0, y:0)
     
     // MARK: Public Variables
-    let fSize: CGFloat = 10.0
+    let entitySize: CGFloat = 10.0
     var game: Game
     
     // MARK: Constructors
@@ -42,32 +42,32 @@ class GameView: UIView {
     
     // MARK: Helper Methods
     func drawEntity(_ e: Point) {
-        let path = UIBezierPath(roundedRect: CGRect(x: CGFloat(e.x) * fSize, y: CGFloat(e.y) * fSize, width: fSize, height: fSize), cornerRadius: fSize / 10)
+        let path = UIBezierPath(roundedRect: CGRect(x: CGFloat(e.x) * entitySize, y: CGFloat(e.y) * entitySize, width: entitySize, height: entitySize), cornerRadius: entitySize / 10)
         UIColor.blue.setFill()
         path.fill()
     }
     
     func drawSquareEntity(_ e: Point) {
         let context = UIGraphicsGetCurrentContext()
-        let spacing = fSize * 0.05
-        let fX0 = CGFloat(e.x) * fSize + spacing
-        let fY0 = CGFloat(e.y) * fSize + spacing
-        let fXMax = CGFloat(e.x + 1) * fSize - spacing
-        let fYMax = CGFloat(e.y + 1) * fSize - spacing
-        context?.move   (to: CGPoint(x: fX0, y: fY0))
-        context?.addLine(to: CGPoint(x: fX0, y: fYMax))
-        context?.addLine(to: CGPoint(x: fXMax, y: fYMax))
-        context?.addLine(to: CGPoint(x: fXMax, y: fY0))
-        context?.addLine(to: CGPoint(x: fX0, y: fY0))
+        let spacing = entitySize * 0.05
+        let x0 = CGFloat(e.x) * entitySize + spacing
+        let y0 = CGFloat(e.y) * entitySize + spacing
+        let xMax = CGFloat(e.x + 1) * entitySize - spacing
+        let yMax = CGFloat(e.y + 1) * entitySize - spacing
+        context?.move   (to: CGPoint(x: x0, y: y0))
+        context?.addLine(to: CGPoint(x: x0, y: yMax))
+        context?.addLine(to: CGPoint(x: xMax, y: yMax))
+        context?.addLine(to: CGPoint(x: xMax, y: y0))
+        context?.addLine(to: CGPoint(x: x0, y: y0))
         context?.setFillColor(UIColor.red.cgColor)
         context?.fillPath()
     }
     
     func updateEntity(_ touches: Set<UITouch>) {
         for t in touches {
-            let iX = Int(t.location(in: self).x / fSize)
-            let iY = Int(t.location(in: self).y / fSize)
-            let point = Point(x: iX, y: iY)
+            let x = Int(t.location(in: self).x / entitySize)
+            let y = Int(t.location(in: self).y / entitySize)
+            let point = Point(x: x, y: y)
             if point != lastUpdatedPoint {
                 lastUpdatedPoint = point
                 if game.entities.contains(point) {

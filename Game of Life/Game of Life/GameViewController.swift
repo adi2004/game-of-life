@@ -9,60 +9,61 @@
 import UIKit
 
 class GameViewController: UIViewController {
-    @IBOutlet weak var vView: GameView!
-    @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var gameView: GameView!
+    @IBOutlet weak var gameInfo: UILabel!
     @IBOutlet weak var slider: UISlider!
-    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var playButton: UIButton!
     var game: Game = Game(nrOfEntities: 30, x: 10, y: 10, width: 10, height: 10)
     var timer: Timer
-    var bIsTimerStarted: Bool
+    var isStarted: Bool
     
     required init?(coder aDecoder: NSCoder) {
         timer = Timer.init()
-        bIsTimerStarted = false
+        isStarted = false
+        playButton.tintColor = UIColor.yellow
         super.init(coder: aDecoder)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.addParallaxToView(vView, intensity: 25)
+        self.addParallaxToView(gameView, intensity: 25)
         doRefresh(self)
     }
     
     @IBAction func doRefresh(_ sender: AnyObject) {
         game = Game(nrOfEntities: 30, x: 10, y: 10, width: 10, height: 10)
-        updateVView(game)
+        updateGameView(game)
     }
     
     @IBAction func doNext(_ sender: AnyObject) {
         game.next()
-        updateVView(game)
+        updateGameView(game)
     }
     
     @IBAction func doAnimate(_ sender: AnyObject) {
         let button = sender as! UIButton
-        if bIsTimerStarted {
+        if isStarted {
             button.setTitle("Start", for: UIControlState())
-            bIsTimerStarted = false
+            isStarted = false
             timer.invalidate()
         } else {
             button.setTitle("Stop", for: UIControlState())
-            bIsTimerStarted = true
+            isStarted = true
             updateTimer(getLogarithmicValue(slider.value))
         }
     }
     
     @IBAction func doValueChanged(_ sender: AnyObject) {
-        if bIsTimerStarted {
+        if isStarted {
             updateTimer(getLogarithmicValue(slider.value))
         }
     }
     
-    func updateVView(_ g: Game) {
-        lblTitle.text = "Generation \(g.generation). Living \(g.entities.count)"
-        vView.game = g
-        vView.setNeedsDisplay()
+    func updateGameView(_ g: Game) {
+        gameInfo.text = "Generation \(g.generation). Living \(g.entities.count)"
+        gameView.game = g
+        gameView.setNeedsDisplay()
     }
     
     func updateTimer(_ fValue: Double) {

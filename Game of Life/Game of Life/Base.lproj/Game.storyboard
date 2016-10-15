@@ -19,9 +19,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="oGL-7E-nl7"/>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ly-Gy-667" customClass="GameView" customModule="Game_of_Life" customModuleProvider="target">
-                                <color key="backgroundColor" red="1" green="0.83158135414123535" blue="0.0" alpha="0.26352163461538464" colorSpace="custom" customColorSpace="sRGB"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="oGL-7E-nl7"/>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ly-Gy-667" customClass="GameView" customModule="Game_of_Life" customModuleProvider="target">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Game of Life!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zuH-ig-dBf">
@@ -83,15 +84,19 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="Wch-gH-SaM" firstAttribute="trailing" secondItem="zuH-ig-dBf" secondAttribute="trailing" id="1TK-r7-8u5"/>
+                            <constraint firstItem="oGL-7E-nl7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1qi-RM-ViH"/>
                             <constraint firstItem="Wch-gH-SaM" firstAttribute="leading" secondItem="6BQ-kJ-aBW" secondAttribute="trailing" constant="8" symbolic="YES" id="2L4-Mp-beB"/>
                             <constraint firstItem="7LS-Mn-t4p" firstAttribute="top" secondItem="zuH-ig-dBf" secondAttribute="bottom" constant="8" symbolic="YES" id="2bY-n5-8E0"/>
+                            <constraint firstItem="oGL-7E-nl7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="30S-mL-oa4"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="c7A-m6-QVT" secondAttribute="bottom" constant="20" id="5Ab-Rn-vHd"/>
                             <constraint firstItem="1cs-YO-1ry" firstAttribute="leading" secondItem="7LS-Mn-t4p" secondAttribute="trailing" constant="8" symbolic="YES" id="7Fe-7Z-bDM"/>
                             <constraint firstItem="5ly-Gy-667" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Dre-oR-bXW"/>
                             <constraint firstAttribute="leading" secondItem="zuH-ig-dBf" secondAttribute="leading" id="Fj1-wi-cdt"/>
                             <constraint firstItem="5ly-Gy-667" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="HOD-RG-Puh"/>
+                            <constraint firstAttribute="trailing" secondItem="oGL-7E-nl7" secondAttribute="trailing" id="HQe-nG-IJQ"/>
                             <constraint firstAttribute="bottom" secondItem="c7A-m6-QVT" secondAttribute="bottom" constant="20" symbolic="YES" id="Jee-lb-w7Q"/>
                             <constraint firstAttribute="trailing" secondItem="zuH-ig-dBf" secondAttribute="trailing" id="M7X-zG-h6a"/>
+                            <constraint firstAttribute="bottom" secondItem="oGL-7E-nl7" secondAttribute="bottom" id="Pak-FC-BZg"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5ly-Gy-667" secondAttribute="bottom" id="Q9C-vm-RuF"/>
                             <constraint firstItem="Wch-gH-SaM" firstAttribute="top" secondItem="6BQ-kJ-aBW" secondAttribute="top" id="VFI-ae-O5p"/>
                             <constraint firstItem="c7A-m6-QVT" firstAttribute="centerX" secondItem="zuH-ig-dBf" secondAttribute="centerX" id="a7O-TP-0V8"/>
@@ -113,10 +118,10 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="button" destination="c7A-m6-QVT" id="mWv-za-U2j"/>
-                        <outlet property="lblTitle" destination="zuH-ig-dBf" id="Jx3-bn-TvB"/>
+                        <outlet property="gameInfo" destination="zuH-ig-dBf" id="OVl-EW-q81"/>
+                        <outlet property="gameView" destination="5ly-Gy-667" id="TWM-bJ-pmI"/>
+                        <outlet property="playButton" destination="c7A-m6-QVT" id="ClO-41-Cnd"/>
                         <outlet property="slider" destination="Wch-gH-SaM" id="z5X-uB-QCt"/>
-                        <outlet property="vView" destination="5ly-Gy-667" id="35y-rC-079"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
