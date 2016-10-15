@@ -9,7 +9,7 @@
 import UIKit
 
 class GameView: UIView {
-    private var lastUpdatedPoint: Point = Point(x:0, y:0)
+    fileprivate var lastUpdatedPoint: Point = Point(x:0, y:0)
     
     // MARK: Public Variables
     let fSize: CGFloat = 10.0
@@ -22,7 +22,7 @@ class GameView: UIView {
     }
     
     // MARK: Life Cycle
-    override func drawRect(rect: CGRect) {
+    override func draw(_ rect: CGRect) {
         let drawFunction: (_:Point) -> () = drawSquareEntity
         for e in game.entities {
             drawFunction(e)
@@ -30,43 +30,43 @@ class GameView: UIView {
     }
     
     // MARK: Touches
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         updateEntity(touches)
         self.setNeedsDisplay()
     }
     
-    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         updateEntity(touches)
         self.setNeedsDisplay()
     }
     
     // MARK: Helper Methods
-    func drawEntity(e: Point) {
-        let path = UIBezierPath(roundedRect: CGRectMake(CGFloat(e.x) * fSize, CGFloat(e.y) * fSize, fSize, fSize), cornerRadius: fSize / 10)
-        UIColor.blueColor().setFill()
+    func drawEntity(_ e: Point) {
+        let path = UIBezierPath(roundedRect: CGRect(x: CGFloat(e.x) * fSize, y: CGFloat(e.y) * fSize, width: fSize, height: fSize), cornerRadius: fSize / 10)
+        UIColor.blue.setFill()
         path.fill()
     }
     
-    func drawSquareEntity(e: Point) {
+    func drawSquareEntity(_ e: Point) {
         let context = UIGraphicsGetCurrentContext()
         let spacing = fSize * 0.05
         let fX0 = CGFloat(e.x) * fSize + spacing
         let fY0 = CGFloat(e.y) * fSize + spacing
         let fXMax = CGFloat(e.x + 1) * fSize - spacing
         let fYMax = CGFloat(e.y + 1) * fSize - spacing
-        CGContextMoveToPoint   (context, fX0,   fY0)
-        CGContextAddLineToPoint(context, fX0,   fYMax)
-        CGContextAddLineToPoint(context, fXMax, fYMax)
-        CGContextAddLineToPoint(context, fXMax, fY0)
-        CGContextAddLineToPoint(context, fX0,   fY0)
-        CGContextSetFillColorWithColor(context, UIColor.redColor().CGColor)
-        CGContextFillPath(context)
+        context?.move   (to: CGPoint(x: fX0, y: fY0))
+        context?.addLine(to: CGPoint(x: fX0, y: fYMax))
+        context?.addLine(to: CGPoint(x: fXMax, y: fYMax))
+        context?.addLine(to: CGPoint(x: fXMax, y: fY0))
+        context?.addLine(to: CGPoint(x: fX0, y: fY0))
+        context?.setFillColor(UIColor.red.cgColor)
+        context?.fillPath()
     }
     
-    func updateEntity(touches: Set<UITouch>) {
+    func updateEntity(_ touches: Set<UITouch>) {
         for t in touches {
-            let iX = Int(t.locationInView(self).x / fSize)
-            let iY = Int(t.locationInView(self).y / fSize)
+            let iX = Int(t.location(in: self).x / fSize)
+            let iY = Int(t.location(in: self).y / fSize)
             let point = Point(x: iX, y: iY)
             if point != lastUpdatedPoint {
                 lastUpdatedPoint = point

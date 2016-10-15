@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class Game: NSObject {
+open class Game: NSObject {
     var entities = Set<Point>()
     var generation: Int = 0
     
@@ -33,14 +33,14 @@ public class Game: NSObject {
         
         // see who will be born
         for e in searchSet {
-            if getNeighbours(e).intersect(entities).count == 3 {
+            if getNeighbours(e).intersection(entities).count == 3 {
                 nextEntities.insert(e)
             }
         }
         
         // see who will stay alive
         for e in entities {
-            let liveNeighboursCount = getNeighbours(e).intersect(entities).count
+            let liveNeighboursCount = getNeighbours(e).intersection(entities).count
             if liveNeighboursCount == 2 || liveNeighboursCount == 3 {
                 nextEntities.insert(e)
             }
@@ -66,7 +66,7 @@ public class Game: NSObject {
         return searchSet
     }
     
-    func getNeighbours(entity: Point) -> Set<Point> {
+    func getNeighbours(_ entity: Point) -> Set<Point> {
         var neighbours = Set<Point>()
         neighbours.insert(Point(x: entity.x - 1, y: entity.y - 1))
         neighbours.insert(Point(x: entity.x, y: entity.y - 1))

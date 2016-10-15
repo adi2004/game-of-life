@@ -82,12 +82,3 @@ strip_invalid_archs() {
   fi
 }
 
-
-if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/CircleMenu/CircleMenu.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/ContextMenu.iOS/ContextMenu_iOS.framework"
-fi
-if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/CircleMenu/CircleMenu.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/ContextMenu.iOS/ContextMenu_iOS.framework"
-fi

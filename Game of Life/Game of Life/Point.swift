@@ -6,10 +6,10 @@
 //  Copyright © 2016 infloresc.ro. All rights reserved.
 //
 
-public class Point: Hashable {
+open class Point: Hashable {
     var x: Int = 0
     var y: Int = 0
-    public var hashValue: Int {
+    open var hashValue: Int {
         get {
             return "\(x)\(y)".hashValue
         }

@@ -55,7 +55,7 @@ class UnitTests: XCTestCase {
         entities.insert(Point(x: 0, y: 1))
         entities.insert(Point(x: 0, y: 2))
         let g = Game(entities)
-        self.measureBlock {
+        self.measure {
             for _ in 1...1_000 {
                 g.next()
             }

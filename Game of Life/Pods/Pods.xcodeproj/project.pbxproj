@@ -7,122 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02B217629E838E394979D86E6FE0B11D /* UIView+YALConstraints.h in Headers */ = {isa = PBXBuildFile; fileRef = 08324D8F2D202F43EEDFC7F15FA03924 /* UIView+YALConstraints.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		04D267B0B48099D45E912396F8CA526B /* CircleMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2A6B8E6B1DF4AA49020F79FEC596AF /* CircleMenu-dummy.m */; };
-		1470BFF6DC1785184C994C3D68D281CD /* CircleMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E3F5726685D50DDB8153B585704894 /* CircleMenuButton.swift */; };
-		2701A28632F309ACE00A1A8C63BAA822 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */; };
-		3B2104F98C057CE045D2B7C878D26E43 /* ContextMenu.iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7901F2C8B58FFB775CBBC3C7D7FE8D3 /* ContextMenu.iOS-dummy.m */; };
-		3E19081B21E21326C5689C78C87516EE /* YALContextMenuTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = C09CF754197B0760A38012A9CF8197AA /* YALContextMenuTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		603F8214B41701CE4161DA1252603BCD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091D54A73E1E8BB182C9D7D245AF1C2F /* UIKit.framework */; };
-		638A7EBE01BE26AB55B9046320066100 /* CircleMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3731FF072530B280ADFC84449C6E7BC1 /* CircleMenu.swift */; };
-		649334C5015899B895C017F723508DFD /* CircleMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B657C5CEDC7FA8255C1854D737787B4 /* CircleMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		74C8AAC28120542DA90A41F0CED25DA2 /* YALContextMenuCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FC88B902FDBBDAD7D150C4079363CA6 /* YALContextMenuCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A0E74CCAB74099DC53D736B8C19061ED /* YALContextMenuTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33ADECF51AF24BEC097A84C9E2FF7F87 /* YALContextMenuTableView.m */; };
-		A74367C94AF3506FA88507A8FCC39EA7 /* CircleMenuLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5FDFD38F586D743A33117B3DAED35F /* CircleMenuLoader.swift */; };
-		AD4A057A86754A784710BA876F46145D /* Pods-Game of Life-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8079C4CC9060136662B4B581D56293A3 /* Pods-Game of Life-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BD7EAC0B6901389D9DA517B2A08A805E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */; };
-		C126EFCC7D8A3DE809625483A9C4A6A6 /* UIView+YALConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F232CBC1A86258C9DC53F541D9A65A /* UIView+YALConstraints.m */; };
-		DF5BB89033DD59C013DDDE52241ACEB6 /* ContextMenu.iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 325DA41ADE4AC1CDE57CC9B9C6D82D11 /* ContextMenu.iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE2A304FBA2A789DF1B8DDABAAE722F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */; };
-		F7CEC6992CB2C37043F9AA067F22ED4E /* Pods-Game of Life-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 841603317D4A664085E96FE1D5FAA2D9 /* Pods-Game of Life-dummy.m */; };
-		FFD4F3844783BE468489A062FA2BABD6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23016F69B2480F44D0BB5526B39192FA /* QuartzCore.framework */; };
+		47A3D68A1A3F3483463161CEF6396E59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		4F819E8B0BA0443776C42B4D70334231 /* Pods-Game of Life-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 841603317D4A664085E96FE1D5FAA2D9 /* Pods-Game of Life-dummy.m */; };
+		EF2CD77E651E3F4383C668F486370CF1 /* Pods-Game of Life-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8079C4CC9060136662B4B581D56293A3 /* Pods-Game of Life-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		44307C8B41ADC06422E7577B0B850D09 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 27533A6098E2BDD80827924FA8F4E742;
-			remoteInfo = CircleMenu;
-		};
-		BFE5C454F2F43C6EFD578CF9C5568153 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 484F4A81F64386835FE4721CE6BED57A;
-			remoteInfo = ContextMenu.iOS;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		08324D8F2D202F43EEDFC7F15FA03924 /* UIView+YALConstraints.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+YALConstraints.h"; path = "YALContextMenu/UIView+YALConstraints.h"; sourceTree = "<group>"; };
-		091D54A73E1E8BB182C9D7D245AF1C2F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		14BF55B4FAD54330206766EE75062FE7 /* Pods-Game of Life-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Game of Life-acknowledgements.markdown"; sourceTree = "<group>"; };
-		187C2063982D0E766537614291D3A3DD /* ContextMenu_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ContextMenu_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A5FDFD38F586D743A33117B3DAED35F /* CircleMenuLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleMenuLoader.swift; path = CircleMenuLib/CircleMenuLoader/CircleMenuLoader.swift; sourceTree = "<group>"; };
-		23016F69B2480F44D0BB5526B39192FA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		3236E949C83610433494C7970EB87FAF /* Pods-Game of Life-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Game of Life-frameworks.sh"; sourceTree = "<group>"; };
-		325DA41ADE4AC1CDE57CC9B9C6D82D11 /* ContextMenu.iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ContextMenu.iOS-umbrella.h"; sourceTree = "<group>"; };
-		33ADECF51AF24BEC097A84C9E2FF7F87 /* YALContextMenuTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YALContextMenuTableView.m; path = YALContextMenu/YALContextMenuTableView.m; sourceTree = "<group>"; };
-		3731FF072530B280ADFC84449C6E7BC1 /* CircleMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleMenu.swift; path = CircleMenuLib/CircleMenu.swift; sourceTree = "<group>"; };
 		3E53467C474EA2730A52C59658C4A943 /* Pods-Game of Life.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Game of Life.modulemap"; sourceTree = "<group>"; };
 		436D7A1C72BF5D647720F25A5F6162B1 /* Pods-Game of Life.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Game of Life.debug.xcconfig"; sourceTree = "<group>"; };
-		4E2A6B8E6B1DF4AA49020F79FEC596AF /* CircleMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CircleMenu-dummy.m"; sourceTree = "<group>"; };
-		4F5CE46C9AEC171E5D873D11D88CF39A /* CircleMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CircleMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		534E7329B86870904CB38F7176CED696 /* ContextMenu.iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ContextMenu.iOS.modulemap; sourceTree = "<group>"; };
-		62FB973CC89180850B6E6CDD3DAACCDF /* Pods_Game_of_Life.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Game_of_Life.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		72AEC87FE3059EBFC7A163FAEC61DEDD /* ContextMenu.iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ContextMenu.iOS-prefix.pch"; sourceTree = "<group>"; };
-		7B657C5CEDC7FA8255C1854D737787B4 /* CircleMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CircleMenu-umbrella.h"; sourceTree = "<group>"; };
-		7FC88B902FDBBDAD7D150C4079363CA6 /* YALContextMenuCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YALContextMenuCell.h; path = YALContextMenu/YALContextMenuCell.h; sourceTree = "<group>"; };
 		8079C4CC9060136662B4B581D56293A3 /* Pods-Game of Life-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Game of Life-umbrella.h"; sourceTree = "<group>"; };
 		841603317D4A664085E96FE1D5FAA2D9 /* Pods-Game of Life-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Game of Life-dummy.m"; sourceTree = "<group>"; };
-		87E3F5726685D50DDB8153B585704894 /* CircleMenuButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleMenuButton.swift; path = CircleMenuLib/CircleMenuButton/CircleMenuButton.swift; sourceTree = "<group>"; };
-		8A608F802F5E73A52F9953E1BAAC549C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A76575E22E833F031BEB4213D900BFB /* Pods-Game of Life-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Game of Life-resources.sh"; sourceTree = "<group>"; };
 		8D78E4ECA1804E35F2D812AAD873E0F2 /* Pods-Game of Life-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Game of Life-acknowledgements.plist"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9C3B8501F1AE2D97AD36430A293B5BFA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2096B983FEACBB7ED6D9B6D2B059FC6 /* CircleMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CircleMenu.xcconfig; sourceTree = "<group>"; };
-		A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		B1ABC7A15C12585814513A0F94BE2DE5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B2F232CBC1A86258C9DC53F541D9A65A /* UIView+YALConstraints.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+YALConstraints.m"; path = "YALContextMenu/UIView+YALConstraints.m"; sourceTree = "<group>"; };
-		B6A6FB3336B600DA29709AAE471D6230 /* ContextMenu.iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ContextMenu.iOS.xcconfig; sourceTree = "<group>"; };
-		C09CF754197B0760A38012A9CF8197AA /* YALContextMenuTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YALContextMenuTableView.h; path = YALContextMenu/YALContextMenuTableView.h; sourceTree = "<group>"; };
-		E7901F2C8B58FFB775CBBC3C7D7FE8D3 /* ContextMenu.iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ContextMenu.iOS-dummy.m"; sourceTree = "<group>"; };
-		E89DB8C43A547C08F29725CAC916B587 /* CircleMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CircleMenu.modulemap; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		EFCAED0739B219A19CEFF330655A8DE1 /* Pods-Game of Life.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Game of Life.release.xcconfig"; sourceTree = "<group>"; };
-		F09120FEEEFFF6AA8BA3983AB23587E9 /* CircleMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CircleMenu-prefix.pch"; sourceTree = "<group>"; };
+		F618465168703F48C483D2C91BFCDF5D /* Pods_Game_of_Life.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Game_of_Life.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1E123947854E086B70AD28A78F6039CA /* Frameworks */ = {
+		4E06200AF7B257849D63DF1484ADFBEA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD7EAC0B6901389D9DA517B2A08A805E /* Foundation.framework in Frameworks */,
-				FFD4F3844783BE468489A062FA2BABD6 /* QuartzCore.framework in Frameworks */,
-				603F8214B41701CE4161DA1252603BCD /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E83597591EED99FAC11273685C31161C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EE2A304FBA2A789DF1B8DDABAAE722F3 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FB663CCA004DED63795587E939582B91 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2701A28632F309ACE00A1A8C63BAA822 /* Foundation.framework in Frameworks */,
+				47A3D68A1A3F3483463161CEF6396E59 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DFDE779C6E5D3445E0CB8CCB8D424449 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		2C34820D16E1B5143A36D25071341638 /* Pods-Game of Life */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,22 +58,28 @@
 			path = "Target Support Files/Pods-Game of Life";
 			sourceTree = "<group>";
 		};
-		324C628C038686AA76DD9B347F7A6C1C /* Pods */ = {
+		3246DA649E0B1199CE5FB30836D2E70B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E7DE534B62A7C5EE668A29D21F0F3B77 /* CircleMenu */,
-				F4EDFE882FEC02E5694FCA68F9B1D4EC /* ContextMenu.iOS */,
+				F618465168703F48C483D2C91BFCDF5D /* Pods_Game_of_Life.framework */,
 			);
-			name = Pods;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				324C628C038686AA76DD9B347F7A6C1C /* Pods */,
-				BE30F6337D13577735E495B2E11EFA2D /* Products */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				3246DA649E0B1199CE5FB30836D2E70B /* Products */,
 				92C29444D632283F480782C79F07416D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -169,162 +92,43 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		B036AC78EDB34B9FF4F961F08ACFC234 /* Support Files */ = {
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				534E7329B86870904CB38F7176CED696 /* ContextMenu.iOS.modulemap */,
-				B6A6FB3336B600DA29709AAE471D6230 /* ContextMenu.iOS.xcconfig */,
-				E7901F2C8B58FFB775CBBC3C7D7FE8D3 /* ContextMenu.iOS-dummy.m */,
-				72AEC87FE3059EBFC7A163FAEC61DEDD /* ContextMenu.iOS-prefix.pch */,
-				325DA41ADE4AC1CDE57CC9B9C6D82D11 /* ContextMenu.iOS-umbrella.h */,
-				9C3B8501F1AE2D97AD36430A293B5BFA /* Info.plist */,
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/ContextMenu.iOS";
-			sourceTree = "<group>";
-		};
-		BE30F6337D13577735E495B2E11EFA2D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4F5CE46C9AEC171E5D873D11D88CF39A /* CircleMenu.framework */,
-				187C2063982D0E766537614291D3A3DD /* ContextMenu_iOS.framework */,
-				62FB973CC89180850B6E6CDD3DAACCDF /* Pods_Game_of_Life.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		CB9D1C49BDB03FA23AF3098AAA4DF52F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E89DB8C43A547C08F29725CAC916B587 /* CircleMenu.modulemap */,
-				A2096B983FEACBB7ED6D9B6D2B059FC6 /* CircleMenu.xcconfig */,
-				4E2A6B8E6B1DF4AA49020F79FEC596AF /* CircleMenu-dummy.m */,
-				F09120FEEEFFF6AA8BA3983AB23587E9 /* CircleMenu-prefix.pch */,
-				7B657C5CEDC7FA8255C1854D737787B4 /* CircleMenu-umbrella.h */,
-				8A608F802F5E73A52F9953E1BAAC549C /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/CircleMenu";
-			sourceTree = "<group>";
-		};
-		DFDE779C6E5D3445E0CB8CCB8D424449 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */,
-				23016F69B2480F44D0BB5526B39192FA /* QuartzCore.framework */,
-				091D54A73E1E8BB182C9D7D245AF1C2F /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		E7DE534B62A7C5EE668A29D21F0F3B77 /* CircleMenu */ = {
-			isa = PBXGroup;
-			children = (
-				3731FF072530B280ADFC84449C6E7BC1 /* CircleMenu.swift */,
-				87E3F5726685D50DDB8153B585704894 /* CircleMenuButton.swift */,
-				1A5FDFD38F586D743A33117B3DAED35F /* CircleMenuLoader.swift */,
-				CB9D1C49BDB03FA23AF3098AAA4DF52F /* Support Files */,
-			);
-			path = CircleMenu;
-			sourceTree = "<group>";
-		};
-		F4EDFE882FEC02E5694FCA68F9B1D4EC /* ContextMenu.iOS */ = {
-			isa = PBXGroup;
-			children = (
-				08324D8F2D202F43EEDFC7F15FA03924 /* UIView+YALConstraints.h */,
-				B2F232CBC1A86258C9DC53F541D9A65A /* UIView+YALConstraints.m */,
-				7FC88B902FDBBDAD7D150C4079363CA6 /* YALContextMenuCell.h */,
-				C09CF754197B0760A38012A9CF8197AA /* YALContextMenuTableView.h */,
-				33ADECF51AF24BEC097A84C9E2FF7F87 /* YALContextMenuTableView.m */,
-				B036AC78EDB34B9FF4F961F08ACFC234 /* Support Files */,
-			);
-			path = ContextMenu.iOS;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		26CE400D96C88FE2AC282845B8942F8F /* Headers */ = {
+		8938075E73EDCDC4BB9A5F7F7147748F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF5BB89033DD59C013DDDE52241ACEB6 /* ContextMenu.iOS-umbrella.h in Headers */,
-				02B217629E838E394979D86E6FE0B11D /* UIView+YALConstraints.h in Headers */,
-				74C8AAC28120542DA90A41F0CED25DA2 /* YALContextMenuCell.h in Headers */,
-				3E19081B21E21326C5689C78C87516EE /* YALContextMenuTableView.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5C49FF9B61D8E3BB39A375005F2C8712 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD4A057A86754A784710BA876F46145D /* Pods-Game of Life-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EB1310F7C59A87712C2C75BB7BD137E2 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				649334C5015899B895C017F723508DFD /* CircleMenu-umbrella.h in Headers */,
+				EF2CD77E651E3F4383C668F486370CF1 /* Pods-Game of Life-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		27533A6098E2BDD80827924FA8F4E742 /* CircleMenu */ = {
+		785B3D2F8309885690D2343E1BBB0CA9 /* Pods-Game of Life */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A438ED94A7A66926EEA5935B338F0B6 /* Build configuration list for PBXNativeTarget "CircleMenu" */;
+			buildConfigurationList = D1D404D3BAA1C8664986F324EAB796A5 /* Build configuration list for PBXNativeTarget "Pods-Game of Life" */;
 			buildPhases = (
-				99E6B72FADDCBB3E131687356A42AA64 /* Sources */,
-				FB663CCA004DED63795587E939582B91 /* Frameworks */,
-				EB1310F7C59A87712C2C75BB7BD137E2 /* Headers */,
+				D4A0697B22BEA86A841017E4C0593084 /* Sources */,
+				4E06200AF7B257849D63DF1484ADFBEA /* Frameworks */,
+				8938075E73EDCDC4BB9A5F7F7147748F /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = CircleMenu;
-			productName = CircleMenu;
-			productReference = 4F5CE46C9AEC171E5D873D11D88CF39A /* CircleMenu.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		484F4A81F64386835FE4721CE6BED57A /* ContextMenu.iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 29DA614EDD2A646E00E82D2636014DA9 /* Build configuration list for PBXNativeTarget "ContextMenu.iOS" */;
-			buildPhases = (
-				1444FA7B543FE079E3B2EC52A0DBC6AD /* Sources */,
-				1E123947854E086B70AD28A78F6039CA /* Frameworks */,
-				26CE400D96C88FE2AC282845B8942F8F /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ContextMenu.iOS;
-			productName = ContextMenu.iOS;
-			productReference = 187C2063982D0E766537614291D3A3DD /* ContextMenu_iOS.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A602AD50502FF2F6EFBDCCCA9D42F3FA /* Pods-Game of Life */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 62301F70C90678C5CEF521CFE0B28810 /* Build configuration list for PBXNativeTarget "Pods-Game of Life" */;
-			buildPhases = (
-				8EFC143C105286C357495B218C07145E /* Sources */,
-				E83597591EED99FAC11273685C31161C /* Frameworks */,
-				5C49FF9B61D8E3BB39A375005F2C8712 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1979657361A1A4B21705E65BF53DA94B /* PBXTargetDependency */,
-				48C7688A9384CFF11EAB7A93A5670755 /* PBXTargetDependency */,
 			);
 			name = "Pods-Game of Life";
 			productName = "Pods-Game of Life";
-			productReference = 62FB973CC89180850B6E6CDD3DAACCDF /* Pods_Game_of_Life.framework */;
+			productReference = F618465168703F48C483D2C91BFCDF5D /* Pods_Game_of_Life.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -344,157 +148,27 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = BE30F6337D13577735E495B2E11EFA2D /* Products */;
+			productRefGroup = 3246DA649E0B1199CE5FB30836D2E70B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				27533A6098E2BDD80827924FA8F4E742 /* CircleMenu */,
-				484F4A81F64386835FE4721CE6BED57A /* ContextMenu.iOS */,
-				A602AD50502FF2F6EFBDCCCA9D42F3FA /* Pods-Game of Life */,
+				785B3D2F8309885690D2343E1BBB0CA9 /* Pods-Game of Life */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1444FA7B543FE079E3B2EC52A0DBC6AD /* Sources */ = {
+		D4A0697B22BEA86A841017E4C0593084 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B2104F98C057CE045D2B7C878D26E43 /* ContextMenu.iOS-dummy.m in Sources */,
-				C126EFCC7D8A3DE809625483A9C4A6A6 /* UIView+YALConstraints.m in Sources */,
-				A0E74CCAB74099DC53D736B8C19061ED /* YALContextMenuTableView.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8EFC143C105286C357495B218C07145E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F7CEC6992CB2C37043F9AA067F22ED4E /* Pods-Game of Life-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		99E6B72FADDCBB3E131687356A42AA64 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				04D267B0B48099D45E912396F8CA526B /* CircleMenu-dummy.m in Sources */,
-				638A7EBE01BE26AB55B9046320066100 /* CircleMenu.swift in Sources */,
-				1470BFF6DC1785184C994C3D68D281CD /* CircleMenuButton.swift in Sources */,
-				A74367C94AF3506FA88507A8FCC39EA7 /* CircleMenuLoader.swift in Sources */,
+				4F819E8B0BA0443776C42B4D70334231 /* Pods-Game of Life-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		1979657361A1A4B21705E65BF53DA94B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CircleMenu;
-			target = 27533A6098E2BDD80827924FA8F4E742 /* CircleMenu */;
-			targetProxy = 44307C8B41ADC06422E7577B0B850D09 /* PBXContainerItemProxy */;
-		};
-		48C7688A9384CFF11EAB7A93A5670755 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ContextMenu.iOS;
-			target = 484F4A81F64386835FE4721CE6BED57A /* ContextMenu.iOS */;
-			targetProxy = BFE5C454F2F43C6EFD578CF9C5568153 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		2225D168E4D3B3D0028BEEDA0E208E15 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 436D7A1C72BF5D647720F25A5F6162B1 /* Pods-Game of Life.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Game of Life/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Game of Life/Pods-Game of Life.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Game_of_Life;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3253E501164E4F5BB733E736FB817C52 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6A6FB3336B600DA29709AAE471D6230 /* ContextMenu.iOS.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ContextMenu.iOS/ContextMenu.iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ContextMenu.iOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ContextMenu.iOS/ContextMenu.iOS.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = ContextMenu_iOS;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		43A55C0362EA89CCE06154F30E307DD2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2096B983FEACBB7ED6D9B6D2B059FC6 /* CircleMenu.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CircleMenu/CircleMenu-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CircleMenu/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CircleMenu/CircleMenu.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = CircleMenu;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		47BEF9D903506B003EA5C2B249729489 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -537,9 +211,9 @@
 			};
 			name = Debug;
 		};
-		5FC26C0B4A7BB832BCF0699E0D922032 /* Release */ = {
+		7FBB9902938C1CB9126E10B3F48D60D7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6A6FB3336B600DA29709AAE471D6230 /* ContextMenu.iOS.xcconfig */;
+			baseConfigurationReference = EFCAED0739B219A19CEFF330655A8DE1 /* Pods-Game of Life.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -550,14 +224,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ContextMenu.iOS/ContextMenu.iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ContextMenu.iOS/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Game of Life/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ContextMenu.iOS/ContextMenu.iOS.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Game of Life/Pods-Game of Life.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = ContextMenu_iOS;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Game_of_Life;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -565,36 +243,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		68A6696BB03EB3EE2B09095FFE24ACC4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2096B983FEACBB7ED6D9B6D2B059FC6 /* CircleMenu.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CircleMenu/CircleMenu-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CircleMenu/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CircleMenu/CircleMenu.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = CircleMenu;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		AAF678CED40D3499169D10F63CA0719E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -634,13 +282,13 @@
 			};
 			name = Release;
 		};
-		F0174D04C145035407DE0F83A5C14996 /* Release */ = {
+		E9FB11E285CEAF8D8288B352292BEDB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFCAED0739B219A19CEFF330655A8DE1 /* Pods-Game of Life.release.xcconfig */;
+			baseConfigurationReference = 436D7A1C72BF5D647720F25A5F6162B1 /* Pods-Game of Life.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -653,7 +301,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Game of Life/Pods-Game of Life.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -665,29 +313,11 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A438ED94A7A66926EEA5935B338F0B6 /* Build configuration list for PBXNativeTarget "CircleMenu" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				68A6696BB03EB3EE2B09095FFE24ACC4 /* Debug */,
-				43A55C0362EA89CCE06154F30E307DD2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		29DA614EDD2A646E00E82D2636014DA9 /* Build configuration list for PBXNativeTarget "ContextMenu.iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3253E501164E4F5BB733E736FB817C52 /* Debug */,
-				5FC26C0B4A7BB832BCF0699E0D922032 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -697,11 +327,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		62301F70C90678C5CEF521CFE0B28810 /* Build configuration list for PBXNativeTarget "Pods-Game of Life" */ = {
+		D1D404D3BAA1C8664986F324EAB796A5 /* Build configuration list for PBXNativeTarget "Pods-Game of Life" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2225D168E4D3B3D0028BEEDA0E208E15 /* Debug */,
-				F0174D04C145035407DE0F83A5C14996 /* Release */,
+				E9FB11E285CEAF8D8288B352292BEDB7 /* Debug */,
+				7FBB9902938C1CB9126E10B3F48D60D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

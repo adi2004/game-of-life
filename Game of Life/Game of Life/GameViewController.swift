@@ -7,19 +7,18 @@
 //
 
 import UIKit
-import CircleMenu
 
 class GameViewController: UIViewController {
     @IBOutlet weak var vView: GameView!
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var slider: UISlider!
-    @IBOutlet weak var button: CircleMenu!
+    @IBOutlet weak var button: UIButton!
     var game: Game = Game(nrOfEntities: 30, x: 10, y: 10, width: 10, height: 10)
-    var timer: NSTimer
+    var timer: Timer
     var bIsTimerStarted: Bool
     
     required init?(coder aDecoder: NSCoder) {
-        timer = NSTimer.init()
+        timer = Timer.init()
         bIsTimerStarted = false
         super.init(coder: aDecoder)
     }
@@ -29,80 +28,64 @@ class GameViewController: UIViewController {
         
         self.addParallaxToView(vView, intensity: 25)
         doRefresh(self)
-        button.delegate = self
     }
     
-    @IBAction func doRefresh(sender: AnyObject) {
+    @IBAction func doRefresh(_ sender: AnyObject) {
         game = Game(nrOfEntities: 30, x: 10, y: 10, width: 10, height: 10)
         updateVView(game)
     }
     
-    @IBAction func doNext(sender: AnyObject) {
+    @IBAction func doNext(_ sender: AnyObject) {
         game.next()
         updateVView(game)
     }
     
-    @IBAction func doAnimate(sender: AnyObject) {
+    @IBAction func doAnimate(_ sender: AnyObject) {
         let button = sender as! UIButton
         if bIsTimerStarted {
-            button.setTitle("Start", forState: UIControlState.Normal)
+            button.setTitle("Start", for: UIControlState())
             bIsTimerStarted = false
             timer.invalidate()
         } else {
-            button.setTitle("Stop", forState: UIControlState.Normal)
+            button.setTitle("Stop", for: UIControlState())
             bIsTimerStarted = true
             updateTimer(getLogarithmicValue(slider.value))
         }
     }
     
-    @IBAction func doValueChanged(sender: AnyObject) {
+    @IBAction func doValueChanged(_ sender: AnyObject) {
         if bIsTimerStarted {
             updateTimer(getLogarithmicValue(slider.value))
         }
     }
     
-    func updateVView(g: Game) {
+    func updateVView(_ g: Game) {
         lblTitle.text = "Generation \(g.generation). Living \(g.entities.count)"
         vView.game = g
         vView.setNeedsDisplay()
     }
     
-    func updateTimer(fValue: Double) {
+    func updateTimer(_ fValue: Double) {
         timer.invalidate()
-        timer = NSTimer.scheduledTimerWithTimeInterval(fValue, target: self, selector: #selector(doNext), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: fValue, target: self, selector: #selector(doNext), userInfo: nil, repeats: true)
     }
     
-    func getLogarithmicValue(fValue:Float) -> Double {
+    func getLogarithmicValue(_ fValue:Float) -> Double {
         let max = 5.0
         let out = (exp(Double(fValue) * max) - 1.0) / exp(max)
         return round(out * 1000)/1000
     }
     
-    func addParallaxToView(view:UIView, intensity:CGFloat) {
-        let verticalMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.y", type: .TiltAlongVerticalAxis)
+    func addParallaxToView(_ view:UIView, intensity:CGFloat) {
+        let verticalMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.y", type: .tiltAlongVerticalAxis)
         verticalMotionEffect.minimumRelativeValue = -intensity
         verticalMotionEffect.maximumRelativeValue = intensity
-        let horizontalMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.x", type: .TiltAlongHorizontalAxis)
+        let horizontalMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.x", type: .tiltAlongHorizontalAxis)
         horizontalMotionEffect.minimumRelativeValue = -intensity
         horizontalMotionEffect.maximumRelativeValue = intensity
         let group = UIMotionEffectGroup()
         group.motionEffects = [horizontalMotionEffect, verticalMotionEffect]
         view.addMotionEffect(group)
     }
-}
-
-extension GameViewController: CircleMenuDelegate {
-    // configure buttons
-    func circleMenu(circleMenu: CircleMenu, willDisplay button: UIButton, atIndex: Int) {
-        button.setImage(UIImage(imageLiteral: "menu-icon"), forState: .Normal)
-        button.backgroundColor = UIColor.yellowColor()
-        button.tintColor = UIColor.redColor()
-    }
-    
-    // call before animation
-//    optional func circleMenu(circleMenu: CircleMenu, buttonWillSelected button: CircleMenuButton, atIndex: Int)
-    
-    // call after animation
-//    optional func circleMenu(circleMenu: CircleMenu, buttonDidSelected button: CircleMenuButton, atIndex: Int)
 }
 

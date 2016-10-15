@@ -1,15 +1,3 @@
-PODS:
-  - CircleMenu (1.0.7)
-  - ContextMenu.iOS (1.1.0)
-
-DEPENDENCIES:
-  - CircleMenu (~> 1.0.0)
-  - ContextMenu.iOS
-
-SPEC CHECKSUMS:
-  CircleMenu: ddd8000fe2774497c367b8f6fcc2354a9a28f4db
-  ContextMenu.iOS: 7f3b63915e660f51aada2c4285c40a837b2c9737
-
-PODFILE CHECKSUM: 4f4c6e63b6f377411689557008abaae161d7c1ed
+PODFILE CHECKSUM: f203efa0e7fb13b4a07a58a50407ecb5e5840c14
 
 COCOAPODS: 1.0.1

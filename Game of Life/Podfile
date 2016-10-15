@@ -7,5 +7,6 @@ target 'Game of Life' do
 
   # Pods for Game of Life
   # pod 'CircleMenu', '~> 1.0.0'
-  pod 'ContextMenu.iOS'
+  # pod 'ContextMenu.iOS'
+#  pod 'SideMenu'
 end
